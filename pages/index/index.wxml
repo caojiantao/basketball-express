@@ -1,0 +1,13 @@
+<view class="match-item" wx:for="{{todayGame.matchList}}" wx:key="index" data-id="{{item.matchId}}" bind:tap="onClickMatch">
+  <view class="match-home">
+    <view class="match-team-name">{{item.homeTeamName}}</view>
+    <image class="match-logo" src="{{item.homeTeamLogo}}" mode=""/>
+  </view>
+  <view class="match-result">
+    <view>{{item.homeScore}} - {{item.awayScore}}</view>
+  </view>
+  <view class="match-away">
+    <image class="match-logo" src="{{item.awayTeamLogo}}" mode=""/>
+    <view class="match-team-name">{{item.awayTeamName}}</view>
+  </view>
+</view>

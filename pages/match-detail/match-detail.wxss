@@ -1,0 +1,48 @@
+.score-item {
+  padding: 10px;
+}
+
+.score-main {
+  display: flex;
+}
+
+.score-cover {
+  width: 80px;
+  height: 100px;
+}
+
+.score-info {
+  margin-left: 10px;
+  flex-grow: 1;
+}
+
+.score-name {
+  font-weight: 700;
+}
+
+.score-desc {
+  font-size: 14px;
+  color: gray;
+}
+
+.score-remark {
+  margin-top: 10px;
+  padding: 8px;
+  background-image: linear-gradient(to right, rgba(255, 243, 216, .6), rgba(255, 243, 216, 0));
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 14px;
+  color: #ff5a2d;
+}
+
+.score-avg {
+  margin-left: 10px;
+  text-align: right;
+}
+
+.score-avg-value {
+  font-size: 20px;
+  font-weight: 700;
+  color: #00a4b8;
+}
