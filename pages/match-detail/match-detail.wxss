@@ -1,5 +1,12 @@
+.score-container {
+  background-color: #f6f7f9;
+  padding: 10px;
+}
+
 .score-item {
   padding: 10px;
+  background-color: #fff;
+  margin-bottom: 10px;
 }
 
 .score-main {

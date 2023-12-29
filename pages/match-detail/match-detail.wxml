@@ -1,24 +1,26 @@
-<view class="score-item" wx:for="{{scoreList}}" wx:key="index">
-  <view class="score-main">
-    <image class="score-cover" src="{{item.infoJson.cover_87x122[0]}}" mode="aspectFill"/>
-    <view class="score-info">
-      <view class="score-name">
-        {{item.infoJson.selfName}}
+<view class="score-container">
+  <view class="score-item" wx:for="{{scoreList}}" wx:key="index">
+    <view class="score-main">
+      <image class="score-cover" src="{{item.infoJson.cover_87x122[0]}}" mode="aspectFill" />
+      <view class="score-info">
+        <view class="score-name">
+          {{item.infoJson.selfName}}
+        </view>
+        <view class="score-desc">
+          {{item.infoJson.desc[0]}}
+        </view>
       </view>
-      <view class="score-desc">
-        {{item.infoJson.desc[0]}}
+      <view class="score-avg">
+        <view class="score-avg-value">
+          {{item.scoreAvg}}
+        </view>
+        <view class="score-avg-count">
+          {{item.scorePersonCount}}
+        </view>
       </view>
     </view>
-    <view class="score-avg">
-      <view class="score-avg-value">
-        {{item.scoreAvg}}
-      </view>
-      <view class="score-avg-count">
-        {{item.scorePersonCount}}
-      </view>
+    <view class="score-remark">
+      {{item.hottestComments[0]}}
     </view>
-  </view>
-  <view class="score-remark">
-    {{item.hottestComments[0]}}
   </view>
 </view>
