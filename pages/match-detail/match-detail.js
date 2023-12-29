@@ -21,6 +21,9 @@ Page({
     wx.request({
       url: 'https://games.mobileapi.hupu.com/1/8.0.1/bplcommentapi/bpl/score_tree/getCurAndSubNodeByBizKey',
       data: data,
+      header: {
+        reqId: new Date().getTime()
+      },
       success: res => {
         let scoreList = []
         for (let data of res.data.data.pageResult.data) {
