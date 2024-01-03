@@ -6,4 +6,4 @@
 
 ## 运行截图
 
-![](shot1.jpg) ![](shot2.jpg) ![](shot3.jpg)
+![](shot.jpg)
