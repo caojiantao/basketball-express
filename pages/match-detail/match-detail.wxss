@@ -53,3 +53,20 @@
   font-weight: 700;
   color: #00a4b8;
 }
+
+.score-avg-count {
+  font-size: 14px;
+  color: gray;
+}
+
+.score-label-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.score-label {
+  display: inline;
+  padding: 1px 2px;
+  margin: 5px 5px 0 0;
+}

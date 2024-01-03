@@ -9,6 +9,11 @@
         <view class="score-desc">
           {{item.infoJson.desc[0]}}
         </view>
+        <view class="score-label-container">
+          <view class="score-label" wx:for="{{item.infoJson.playerLabel}}" wx:key="index" wx:for-item="label" style="background-color:{{label.bgColorDay}};color:{{label.textColorDay}}">
+            {{label.text}}
+          </view>
+        </view>
       </view>
       <view class="score-avg">
         <view class="score-avg-value">

@@ -1,4 +1,12 @@
-<view class="match-item" wx:for="{{todayGame.matchList}}" wx:key="index" data-id="{{item.matchId}}" bind:tap="onClickMatch">
+<view class="section">
+  <picker bindchange="bindPickerChange" value="{{gameIndex}}" range="{{gameList}}" range-key="dayBlock">
+    <view class="picker">
+      选择比赛日：{{gameList[gameIndex].dayBlock}}
+    </view>
+  </picker>
+</view>
+
+<view class="match-item" wx:for="{{gameList[gameIndex].matchList}}" wx:key="index" data-id="{{item.matchId}}" bind:tap="onClickMatch">
   <view class="match-home">
     <view class="match-team-name">{{item.homeTeamName}}</view>
     <image class="match-logo" src="{{item.homeTeamLogo}}" mode=""/>

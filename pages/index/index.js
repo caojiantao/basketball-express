@@ -4,13 +4,17 @@ Page({
    * 页面的初始数据
    */
   data: {
-    todayGame: null,
+    gameList: [],
+    gameIndex: ""
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+  },
+
+  onShow(options) {
     this.initCurrentGame();
   },
 
@@ -25,19 +29,16 @@ Page({
         let nextData = JSON.parse(nextDataStr);
         console.log(nextData);
         let gameList = nextData.props.pageProps.gameList;
-        let date = new Date();
-        // let day = '20231228';
-        let day = `${date.getFullYear()}${date.getMonth() + 1}${date.getDate()}`;
-        let todayGame = null;
-        for (let game of gameList) {
-          if (game.day == day) {
-            todayGame = game;
+        let day = new Date().toISOString().slice(0, 10).replace(/-/g, '');
+        let i;
+        for (i in gameList) {
+          if (gameList[i].day == day) {
             break;
           }
         }
-        console.log(todayGame);
         this.setData({
-          todayGame: todayGame
+          gameList: gameList,
+          gameIndex: i
         })
       },
       fail: function (err) {
@@ -50,11 +51,11 @@ Page({
     let matchId = e.currentTarget.dataset.id;
 
     let match = null;
-    for (let item of this.data.todayGame.matchList) {
-        if (item.matchId == matchId) {
-            match = item;
-            break;
-        }
+    for (let item of this.data.gameList[this.data.gameIndex].matchList) {
+      if (item.matchId == matchId) {
+          match = item;
+          break;
+      }
     }
     console.log('点击的比赛信息', match);
     if (match.matchStatus != 'COMPLETED') {
@@ -78,6 +79,11 @@ Page({
       wx.navigateTo({
         url: '/pages/match-detail/match-detail' + params,
       })
+    })
+  },
+  bindPickerChange(e) {
+    this.setData({
+      gameIndex: e.detail.value
     })
   }
 })
