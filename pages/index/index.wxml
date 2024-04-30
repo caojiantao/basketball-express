@@ -13,6 +13,7 @@
   </view>
   <view class="match-result">
     <view>{{item.homeScore}} - {{item.awayScore}}</view>
+    <view class="match-result-time">{{item.beginTime}}</view>
   </view>
   <view class="match-away">
     <image class="match-logo" src="{{item.awayTeamLogo}}" mode=""/>

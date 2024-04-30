@@ -28,4 +28,7 @@
       {{item.hottestComments[0]}}
     </view>
   </view>
+  <view wx:if="{{noMore}}">
+    没有更多了
+  </view>
 </view>

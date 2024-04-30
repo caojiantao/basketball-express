@@ -30,15 +30,18 @@ Page({
         console.log(nextData);
         let gameList = nextData.props.pageProps.gameList;
         let day = new Date().toISOString().slice(0, 10).replace(/-/g, '');
-        let i;
-        for (i in gameList) {
+        let currentIndex;
+        for (let i in gameList) {
           if (gameList[i].day == day) {
-            break;
+            currentIndex = i;
+          }
+          for (let m of gameList[i].matchList) {
+            m.beginTime = this.convertMillsToHM(m.chinaStartTime);
           }
         }
         this.setData({
           gameList: gameList,
-          gameIndex: i
+          gameIndex: currentIndex,
         })
       },
       fail: function (err) {
@@ -85,5 +88,14 @@ Page({
     this.setData({
       gameIndex: e.detail.value
     })
-  }
+  },
+  convertMillsToHM(mills) {
+    // 将毫秒转换为Date对象
+    var date = new Date(mills);
+    // 获取小时和分钟并格式化为两位数字
+    var hours = date.getHours().toString().padStart(2, '0');
+    var minutes = date.getMinutes().toString().padStart(2, '0');
+    // 返回HHmm格式的字符串
+    return hours + ":" + minutes;
+  },
 })
