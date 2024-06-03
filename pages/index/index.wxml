@@ -8,7 +8,7 @@
 
 <view class="match-item" wx:for="{{gameList[gameIndex].matchList}}" wx:key="index" data-id="{{item.matchId}}" bind:tap="onClickMatch">
   <view class="match-home">
-    <view class="match-team-name">{{item.homeTeamName}}</view>
+    <view class="match-team-name"><text wx:if="{{item.homeBigScore}}">[{{item.homeBigScore}}]</text>{{item.homeTeamName}}</view>
     <image class="match-logo" src="{{item.homeTeamLogo}}" mode=""/>
   </view>
   <view class="match-result">
@@ -17,6 +17,6 @@
   </view>
   <view class="match-away">
     <image class="match-logo" src="{{item.awayTeamLogo}}" mode=""/>
-    <view class="match-team-name">{{item.awayTeamName}}</view>
+    <view class="match-team-name">{{item.awayTeamName}}<text wx:if="{{item.awayBigScore}}">[{{item.awayBigScore}}]</text></view>
   </view>
 </view>

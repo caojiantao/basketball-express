@@ -21,6 +21,7 @@ Page({
 
   initCurrentGame() {
     let regexp = /<script id="__NEXT_DATA__" type="application\/json">(.*)<\/script>/;
+    wx.showLoading({title: '加载中'});
     wx.request({
       url: "https://m.hupu.com/nba/schedule",
       success: res => {
@@ -46,6 +47,9 @@ Page({
       },
       fail: function (err) {
         console.log(err)
+      },
+      complete: () => {
+        wx.hideLoading();
       }
     })
   },
@@ -71,9 +75,13 @@ Page({
         return;
     }
 
+    wx.showLoading({title: '加载中'});
     let requestTask = wx.request({
       url: `https://m.hupu.com/nba/live/${matchId}`,
       redirect: 'manual',
+      complete: () => {
+        wx.hideLoading();
+      }
     });
     requestTask.onHeadersReceived(res => {
       console.log('请求重定向', res);
