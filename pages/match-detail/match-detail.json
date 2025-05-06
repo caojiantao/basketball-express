@@ -1,4 +1,8 @@
 {
+  "navigationBarTitleText": "比赛详情",
+  "enablePullDownRefresh": true,
+  "backgroundColor": "#f6f6f6",
+  "backgroundTextStyle": "dark",
   "usingComponents": {},
   "onReachBottomDistance": 300
 }

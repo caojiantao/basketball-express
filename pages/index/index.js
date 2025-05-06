@@ -1,3 +1,6 @@
+const api = require('../../services/api')
+const util = require('../../utils/util')
+
 Page({
 
   /**
@@ -5,105 +8,129 @@ Page({
    */
   data: {
     gameList: [],
-    gameIndex: ""
+    gameIndex: "",
+    isLoading: false,
+    isRefreshing: false
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad(options) {
+  onLoad() {
+    this.initCurrentGame()
   },
 
-  onShow(options) {
-    this.initCurrentGame();
+  onShow() {
+    this.initCurrentGame()
   },
 
-
-  initCurrentGame() {
-    let regexp = /<script id="__NEXT_DATA__" type="application\/json">(.*)<\/script>/;
-    wx.showLoading({title: '加载中'});
-    wx.request({
-      url: "https://m.hupu.com/nba/schedule",
-      success: res => {
-        let html = res.data;
-        let nextDataStr = html.match(regexp)[1];
-        let nextData = JSON.parse(nextDataStr);
-        console.log(nextData);
-        let gameList = nextData.props.pageProps.gameList;
-        let day = new Date().toISOString().slice(0, 10).replace(/-/g, '');
-        let currentIndex;
-        for (let i in gameList) {
-          if (gameList[i].day == day) {
-            currentIndex = i;
-          }
-          for (let m of gameList[i].matchList) {
-            m.beginTime = this.convertMillsToHM(m.chinaStartTime);
-          }
-        }
-        this.setData({
-          gameList: gameList,
-          gameIndex: currentIndex,
-        })
-      },
-      fail: function (err) {
-        console.log(err)
-      },
-      complete: () => {
-        wx.hideLoading();
-      }
-    })
+  onPullDownRefresh() {
+    this.refreshData()
   },
-  onClickMatch(e) {
-    console.log(e);
-    let matchId = e.currentTarget.dataset.id;
 
-    let match = null;
-    for (let item of this.data.gameList[this.data.gameIndex].matchList) {
-      if (item.matchId == matchId) {
-          match = item;
-          break;
-      }
-    }
-    console.log('点击的比赛信息', match);
-    if (match.matchStatus != 'COMPLETED') {
-        wx.showToast({
-          icon: 'error',
-          title: '未完赛',
-          mask: true,
-          duration: 1000,
-        })
-        return;
-    }
-
-    wx.showLoading({title: '加载中'});
-    let requestTask = wx.request({
-      url: `https://m.hupu.com/nba/live/${matchId}`,
-      redirect: 'manual',
-      complete: () => {
-        wx.hideLoading();
-      }
-    });
-    requestTask.onHeadersReceived(res => {
-      console.log('请求重定向', res);
-      let location = res.header.Location;
-      let params = location.substr(location.lastIndexOf("?"));
-      wx.navigateTo({
-        url: '/pages/match-detail/match-detail' + params,
+  async refreshData() {
+    try {
+      this.setData({ isRefreshing: true })
+      await this.initCurrentGame()
+      wx.showToast({
+        title: '刷新成功',
+        icon: 'success',
+        duration: 1000
       })
-    })
+    } catch (error) {
+      wx.showToast({
+        title: '刷新失败',
+        icon: 'error',
+        duration: 2000
+      })
+    } finally {
+      this.setData({ isRefreshing: false })
+      wx.stopPullDownRefresh()
+    }
   },
+
+  async initCurrentGame() {
+    if (this.data.isLoading) return
+
+    try {
+      this.setData({ isLoading: true })
+      if (!this.data.isRefreshing) {
+        wx.showLoading({ title: '加载中' })
+      }
+
+      const gameList = await api.getSchedule()
+      const day = new Date().toISOString().slice(0, 10).replace(/-/g, '')
+      let currentIndex
+
+      for (let i in gameList) {
+        if (gameList[i].day == day) {
+          currentIndex = i
+        }
+        for (let m of gameList[i].matchList) {
+          m.beginTime = util.convertMillsToHM(m.chinaStartTime)
+        }
+      }
+
+      this.setData({
+        gameList: gameList,
+        gameIndex: currentIndex
+      })
+    } catch (error) {
+      wx.showToast({
+        icon: 'error',
+        title: '加载失败，请重试',
+        duration: 2000
+      })
+      console.error('初始化数据失败:', error)
+    } finally {
+      this.setData({ isLoading: false })
+      if (!this.data.isRefreshing) {
+        wx.hideLoading()
+      }
+    }
+  },
+
+  onClickMatch: util.debounce(async function(e) {
+    const matchId = e.currentTarget.dataset.id
+    const match = this.data.gameList[this.data.gameIndex].matchList.find(
+      item => item.matchId == matchId
+    )
+
+    if (!match) return
+
+    if (match.matchStatus != 'COMPLETED') {
+      wx.showToast({
+        icon: 'error',
+        title: '未完赛',
+        mask: true,
+        duration: 1000
+      })
+      return
+    }
+
+    try {
+      wx.showLoading({ title: '加载中' })
+      const res = await api.getMatchDetail(matchId)
+      const location = res.header.Location
+      const params = location.substr(location.lastIndexOf("?"))
+      wx.navigateTo({
+        url: '/pages/match-detail/match-detail' + params
+      })
+    } catch (error) {
+      wx.showToast({
+        icon: 'error',
+        title: '获取详情失败',
+        duration: 2000
+      })
+      console.error('获取比赛详情失败:', error)
+    } finally {
+      wx.hideLoading()
+    }
+  }),
+
   bindPickerChange(e) {
     this.setData({
       gameIndex: e.detail.value
     })
-  },
-  convertMillsToHM(mills) {
-    // 将毫秒转换为Date对象
-    var date = new Date(mills);
-    // 获取小时和分钟并格式化为两位数字
-    var hours = date.getHours().toString().padStart(2, '0');
-    var minutes = date.getMinutes().toString().padStart(2, '0');
-    // 返回HHmm格式的字符串
-    return hours + ":" + minutes;
-  },
+  }
 })

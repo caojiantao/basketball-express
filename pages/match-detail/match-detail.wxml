@@ -1,34 +1,58 @@
-<view class="score-container">
-  <view class="score-item" wx:for="{{scoreList}}" wx:key="index">
-    <view class="score-main">
-      <image class="score-cover" src="{{item.infoJson.cover_87x122[0]}}" mode="aspectFill" />
-      <view class="score-info">
-        <view class="score-name">
-          {{item.infoJson.selfName}}
-        </view>
-        <view class="score-desc">
-          {{item.infoJson.desc[0]}}
-        </view>
-        <view class="score-label-container">
-          <view class="score-label" wx:for="{{item.infoJson.playerLabel}}" wx:key="index" wx:for-item="label" style="background-color:{{label.bgColorDay}};color:{{label.textColorDay}}">
-            {{label.text}}
+<view class="container">
+  <!-- 比赛详情内容 -->
+  <block wx:if="{{matchDetail}}">
+    <!-- 原有的比赛详情内容 -->
+  </block>
+
+  <!-- 评分列表 -->
+  <view class="score-list">
+    <block wx:if="{{scoreList.length > 0}}">
+      <view class="score-item" wx:for="{{scoreList}}" wx:key="id">
+        <view class="score-main">
+          <image class="score-cover" src="{{item.infoJson.cover_87x122[0]}}" mode="aspectFill" />
+          <view class="score-info">
+            <view class="score-name">
+              {{item.infoJson.selfName}}
+            </view>
+            <view class="score-desc">
+              {{item.infoJson.desc[0]}}
+            </view>
+            <view class="score-label-container">
+              <view class="score-label" wx:for="{{item.infoJson.playerLabel}}" wx:key="index" wx:for-item="label" style="background-color:{{label.bgColorDay}};color:{{label.textColorDay}}">
+                {{label.text}}
+              </view>
+            </view>
+          </view>
+          <view class="score-avg">
+            <view class="score-avg-value">
+              {{item.scoreAvg}}
+            </view>
+            <view class="score-avg-count">
+              {{item.scorePersonCount}}
+            </view>
           </view>
         </view>
-      </view>
-      <view class="score-avg">
-        <view class="score-avg-value">
-          {{item.scoreAvg}}
-        </view>
-        <view class="score-avg-count">
-          {{item.scorePersonCount}}
+        <view class="score-remark">
+          {{item.hottestComments[0]}}
         </view>
       </view>
-    </view>
-    <view class="score-remark">
-      {{item.hottestComments[0]}}
+    </block>
+    <view wx:else class="empty-state">
+      <image class="empty-icon" src="/assets/empty.png" mode="aspectFit"></image>
+      <text class="empty-text">暂无评分数据</text>
     </view>
   </view>
-  <view wx:if="{{noMore}}">
-    没有更多了
+
+  <!-- 加载状态 -->
+  <view class="loading-state" wx:if="{{isLoading && !isRefreshing}}">
+    <view class="loading-icon"></view>
+    <text class="loading-text">加载中...</text>
+  </view>
+
+  <!-- 无更多数据提示 -->
+  <view class="no-more" wx:if="{{noMore && scoreList.length > 0}}">
+    <view class="divider"></view>
+    <text class="no-more-text">没有更多数据了</text>
+    <view class="divider"></view>
   </view>
 </view>
