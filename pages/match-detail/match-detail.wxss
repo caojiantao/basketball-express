@@ -71,6 +71,7 @@
   display: inline;
   padding: 1px 2px;
   margin: 5px 5px 0 0;
+  font-size: 28rpx;
 }
 
 .container {

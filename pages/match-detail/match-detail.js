@@ -27,7 +27,8 @@ Page({
     loadError: false,
     // 评论相关数据
     showComments: false,
-    currentBizId: ''
+    currentBizId: '',
+    currentBizType: ''
   },
 
   /**
@@ -152,7 +153,7 @@ Page({
 
   // 点击评分项
   onScoreItemTap(e) {
-    const { bizId } = e.currentTarget.dataset
+    const { bizId, bizType } = e.currentTarget.dataset
     
     if (!bizId) {
       wx.showToast({
@@ -164,7 +165,8 @@ Page({
     
     this.setData({
       showComments: true,
-      currentBizId: bizId
+      currentBizId: bizId,
+      currentBizType: bizType
     })
   },
 
@@ -172,7 +174,8 @@ Page({
   onCommentsClose() {
     this.setData({ 
       showComments: false,
-      currentBizId: ''
+      currentBizId: '',
+      currentBizType: ''
     })
   },
 

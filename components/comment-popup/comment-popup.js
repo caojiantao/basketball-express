@@ -13,18 +13,6 @@ Component({
     outBizType: {
       type: String,
       value: ''
-    },
-    page: {
-      type: Number,
-      value: 1
-    },
-    pageSize: {
-      type: Number,
-      value: 10
-    },
-    noMore: {
-      type: Boolean,
-      value: false
     }
   },
 
@@ -52,27 +40,22 @@ Component({
     },
 
     async loadComments() {
-      if (this.data.loading || this.data.noMore) return
+      if (this.data.loading) return
 
       this.setData({ loading: true })
 
       try {
         const response = await api.getComments({
           outBizNo: this.data.outBizNo,
-          outBizType: this.data.outBizType,
-          page: this.data.page,
-          pageSize: this.data.pageSize
+          outBizType: this.data.outBizType
         })
 
         if (!response || !response.data || !response.data.length) {
-          this.setData({ noMore: true })
           return
         }
 
         this.setData({
-          commentList: [...this.data.commentList, ...response.data],
-          page: this.data.page + 1,
-          noMore: response.data.length < this.data.pageSize
+          commentList: [...this.data.commentList, ...response.data]
         })
       } catch (error) {
         this.setData({ error: true })

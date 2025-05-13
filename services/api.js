@@ -3,6 +3,7 @@ const request = (options = {}) => {
     wx.request({
       ...options,
       success: (res) => {
+        console.log(options, res)
         // 如果设置了手动处理重定向，直接返回完整响应
         if (options.redirect === 'manual') {
           resolve(res)
@@ -75,13 +76,7 @@ const getComments = (params) => {
   return request({
     url: 'https://games.mobileapi.hupu.com/1/8.0.99/bplcommentapi/bpl/comment/list/primarySingleRow/hottest',
     method: 'GET',
-    data: {
-      outBizNo: params.outBizNo,
-      outBizType: params.outBizType,
-      clientCode: '',
-      page: params.page,
-      pageSize: params.pageSize
-    }
+    data: params
   })
 }
 

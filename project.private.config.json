@@ -27,8 +27,8 @@
           "name": "pages/match-detail/match-detail",
           "pathName": "pages/match-detail/match-detail",
           "query": "env=prod&outBizNo=5722&outBizType=basketball_match",
-          "scene": null,
-          "launchMode": "default"
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }

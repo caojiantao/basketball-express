@@ -32,7 +32,7 @@
             </view>
           </view>
         </view>
-        <view class="score-remark" bindtap="onScoreItemTap" data-biz-id="{{item.bizId}}">
+        <view class="score-remark" bindtap="onScoreItemTap" data-biz-id="{{item.bizId}}" data-biz-type="{{item.bizType}}">
           {{item.hottestComments[0]}}
         </view>
       </view>
@@ -59,6 +59,7 @@
   <comment-popup 
     show="{{showComments}}" 
     outBizNo="{{currentBizId}}"
+    outBizType="{{currentBizType}}"
     bind:close="onCommentsClose"
   />
 </view>
