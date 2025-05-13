@@ -1,0 +1,174 @@
+.comment-popup {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.comment-popup.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.comment-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  border-radius: 20rpx 20rpx 0 0;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-popup.show .comment-content {
+  transform: translateY(0);
+}
+
+.comment-header {
+  padding: 0 24rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 88rpx;
+  position: relative;
+  border-bottom: 1rpx solid #eee;
+  flex-shrink: 0;
+}
+
+.comment-header .title {
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #333;
+}
+
+.comment-header .close {
+  position: absolute;
+  right: 24rpx;
+  font-size: 40rpx;
+  color: #999;
+  padding: 20rpx;
+}
+
+.comment-scroll-container {
+  flex: 1;
+  overflow: hidden;
+}
+
+.comment-list {
+  height: 100%;
+}
+
+.comment-item {
+  display: flex;
+  padding: 24rpx;
+  border-bottom: 1rpx solid #f5f5f5;
+}
+
+.avatar {
+  width: 56rpx;
+  height: 56rpx;
+  border-radius: 50%;
+  margin-right: 16rpx;
+  flex-shrink: 0;
+}
+
+.comment-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.user-info {
+  margin-bottom: 8rpx;
+}
+
+.username {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #333;
+}
+
+.content {
+  font-size: 28rpx;
+  color: #333;
+  line-height: 1.5;
+  margin: 8rpx 0;
+  word-break: break-all;
+}
+
+.comment-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8rpx;
+  margin-top: 8rpx;
+}
+
+.content-image {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 8rpx;
+}
+
+.comment-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12rpx;
+}
+
+.time-location {
+  display: flex;
+  align-items: center;
+  gap: 16rpx;
+}
+
+.time, .location {
+  font-size: 24rpx;
+  color: #999;
+}
+
+.location::before {
+  content: '·';
+  margin-right: 8rpx;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+}
+
+.count {
+  font-size: 24rpx;
+  color: #999;
+  margin-left: 4rpx;
+}
+
+.loading, .empty, .error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32rpx;
+}
+
+.loading text, .empty text, .error text {
+  font-size: 24rpx;
+  color: #999;
+}
+
+.error text {
+  color: #576b95;
+} 

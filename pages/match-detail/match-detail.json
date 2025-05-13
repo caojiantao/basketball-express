@@ -3,6 +3,8 @@
   "enablePullDownRefresh": true,
   "backgroundColor": "#f6f6f6",
   "backgroundTextStyle": "dark",
-  "usingComponents": {},
+  "usingComponents": {
+    "comment-popup": "/components/comment-popup/comment-popup"
+  },
   "onReachBottomDistance": 300
 }

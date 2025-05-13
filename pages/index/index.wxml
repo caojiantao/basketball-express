@@ -1,22 +1,33 @@
-<view class="section">
-  <picker bindchange="bindPickerChange" value="{{gameIndex}}" range="{{gameList}}" range-key="dayBlock">
-    <view class="picker">
-      选择比赛日：{{gameList[gameIndex].dayBlock}}
-    </view>
-  </picker>
-</view>
+<view class="match-list">
+  <block wx:for="{{gameList}}" wx:key="day">
+    <view class="date-group" id="date-{{item.day}}">{{item.dayBlock}}</view>
+    <block wx:for="{{item.matchList}}" wx:for-item="match" wx:key="matchId">
+      <view class="match-item" data-id="{{match.matchId}}" bind:tap="onClickMatch">
+        <view class="match-time-box">
+          <view class="match-time">{{match.beginTime}}</view>
+          <view class="match-stage">{{match.competitionStageDesc}}</view>
+        </view>
+        
+        <view class="match-team-list">
+          <view class="match-team">
+            <image class="match-logo" src="{{match.homeTeamLogo}}" mode="aspectFit"/>
+            <view class="match-team-name">{{match.homeTeamName}}</view>
+            <view class="match-big-score">[{{match.homeBigScore ? match.homeBigScore : "0"}}]</view>
+            <view class="match-team-score">{{match.homeScore ? match.homeScore : "-"}}</view>
+          </view>
+          <view class="match-team">
+            <image class="match-logo" src="{{match.awayTeamLogo}}" mode="aspectFit"/>
+            <view class="match-team-name">{{match.awayTeamName}}</view>
+            <view class="match-big-score">[{{match.awayBigScore ? match.awayBigScore : "0"}}]</view>
+            <view class="match-team-score">{{match.awayScore ? match.awayScore : "-"}}</view>
+          </view>
+        </view>
 
-<view class="match-item" wx:for="{{gameList[gameIndex].matchList}}" wx:key="index" data-id="{{item.matchId}}" bind:tap="onClickMatch">
-  <view class="match-home">
-    <view class="match-team-name"><text wx:if="{{item.homeBigScore}}">[{{item.homeBigScore}}]</text>{{item.homeTeamName}}</view>
-    <image class="match-logo" src="{{item.homeTeamLogo}}" mode=""/>
-  </view>
-  <view class="match-result">
-    <view>{{item.homeScore}} - {{item.awayScore}}</view>
-    <view class="match-result-time">{{item.beginTime}}</view>
-  </view>
-  <view class="match-away">
-    <image class="match-logo" src="{{item.awayTeamLogo}}" mode=""/>
-    <view class="match-team-name">{{item.awayTeamName}}<text wx:if="{{item.awayBigScore}}">[{{item.awayBigScore}}]</text></view>
-  </view>
+        <view class="match-score-box">
+          <view class="match-status">{{match.matchStatusChinese}}</view>
+          <view wx:if="{{match.score}}" class="match-viewers">{{match.score}}</view>
+        </view>
+      </view>
+    </block>
+  </block>
 </view>

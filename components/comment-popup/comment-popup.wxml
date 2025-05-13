@@ -1,0 +1,68 @@
+<view class="comment-popup {{show ? 'show' : ''}}" catchtap="onClose" catchtouchmove="catchTouchMove">
+  <view class="comment-content" catchtap="catchContentTap">
+    <view class="comment-header">
+      <text class="title">全部评论</text>
+      <text class="close" bindtap="onClose">×</text>
+    </view>
+    
+    <view class="comment-scroll-container" catchtouchmove="catchTouchMove">
+      <scroll-view 
+        class="comment-list" 
+        scroll-y="{{true}}"
+        enhanced="{{true}}"
+        bounces="{{true}}"
+        enable-flex="{{true}}"
+        catchtouchmove="catchTouchMove"
+      >
+        <block wx:if="{{!error}}">
+          <view class="comment-item" wx:for="{{commentList}}" wx:key="commentId">
+            <image class="avatar" src="{{item.commentUserHeadImg}}" mode="aspectFill" />
+            <view class="comment-info">
+              <view class="user-info">
+                <text class="username">{{item.commentUserName}}</text>
+              </view>
+              <view class="content">{{item.commentContent}}</view>
+              <!-- 评论图片 -->
+              <block wx:if="{{item.commentContentImages.length > 0}}">
+                <view class="comment-images">
+                  <image 
+                    wx:for="{{item.commentContentImages}}" 
+                    wx:key="commentContentId" 
+                    wx:for-item="img"
+                    src="{{img.commentContent}}"
+                    mode="aspectFill"
+                    class="content-image"
+                  />
+                </view>
+              </block>
+              <view class="comment-footer">
+                <view class="time-location">
+                  <text class="time">{{item.commentDate}}</text>
+                  <text class="location" wx:if="{{item.ipLocation}}">{{item.ipLocation}}</text>
+                </view>
+                <view class="actions">
+                  <view class="action">
+                    <icon type="success_no_circle" size="16" color="#999"></icon>
+                    <text class="count">{{item.lightCount}}</text>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+          
+          <view class="loading" wx:if="{{loading}}">
+            <text>加载中...</text>
+          </view>
+          
+          <view class="empty" wx:if="{{!loading && commentList.length === 0}}">
+            <text>暂无评论</text>
+          </view>
+        </block>
+        
+        <view class="error" wx:if="{{error}}" bindtap="retryLoad">
+          <text>加载失败，点击重试</text>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view> 

@@ -1,5 +1,12 @@
 const api = require('../../services/api')
 
+// 格式化评分人数
+function formatScoreCount(count) {
+  if (!count) return '0 评分'
+  if (count < 10000) return `${count} 评分`
+  return `${(count / 10000).toFixed(1)}万 评分`
+}
+
 Page({
 
   /**
@@ -17,23 +24,28 @@ Page({
     matchDetail: null,
     isLoading: false,
     isRefreshing: false,
-    loadError: false
+    loadError: false,
+    // 评论相关数据
+    showComments: false,
+    currentBizId: ''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    if (options.id) {
-      this.setData({ matchId: options.id })
-      this.loadMatchDetail()
-    }
-    let query = this.data.query;
-    Object.assign(query, options);
-    this.setData({
-      query: query
+    const { env, outBizNo, outBizType } = options
+    
+    this.setData({ 
+      query: {
+        ...this.data.query,
+        env,
+        outBizNo,
+        outBizType
+      }
     })
-    this.loadData();
+
+    this.loadData()
   },
 
   onPullDownRefresh() {
@@ -44,9 +56,15 @@ Page({
     try {
       this.setData({ 
         isRefreshing: true,
-        loadError: false
+        loadError: false,
+        scoreList: [],
+        noMore: false,
+        query: {
+          ...this.data.query,
+          page: 1
+        }
       })
-      await this.loadMatchDetail()
+      await this.loadData()
       wx.showToast({
         title: '刷新成功',
         icon: 'success',
@@ -64,24 +82,38 @@ Page({
     }
   },
 
-  async loadMatchDetail() {
-    if (this.data.isLoading) return
+  async loadData() {
+    if (this.data.isLoading || this.data.noMore) return
+
+    this.setData({ isLoading: true })
 
     try {
-      this.setData({ 
-        isLoading: true,
-        loadError: false
-      })
-      if (!this.data.isRefreshing) {
-        wx.showLoading({ 
-          title: '加载中',
-          mask: true
-        })
+      const list = await api.getMatchScores(this.data.query)
+      
+      if (!list || list.length === 0) {
+        this.setData({ noMore: true })
+        return
       }
 
-      const res = await api.getMatchDetail(this.data.matchId)
+      const newScoreList = []
+      for (const item of list) {
+        if (item.node) {
+          const formattedItem = {
+            ...item.node,
+            bizId: item.node.bizId,
+            scorePersonCount: formatScoreCount(item.node.scorePersonCount)
+          }
+          newScoreList.push(formattedItem)
+        }
+      }
+
       this.setData({
-        matchDetail: res.data
+        scoreList: [...this.data.scoreList, ...newScoreList],
+        noMore: list.length < this.data.query.pageSize,
+        query: {
+          ...this.data.query,
+          page: this.data.query.page + 1
+        }
       })
     } catch (error) {
       this.setData({ loadError: true })
@@ -90,74 +122,16 @@ Page({
         title: '加载失败，请重试',
         duration: 1000
       })
-      console.error('加载比赛详情失败:', error)
+      console.error('加载评分数据失败:', error)
     } finally {
       this.setData({ isLoading: false })
-      if (!this.data.isRefreshing) {
-        wx.hideLoading()
-      }
     }
-  },
-
-  loadData() {
-    if (this.data.isLoading) return
-
-    this.setData({ 
-      isLoading: true,
-      loadError: false
-    })
-
-    wx.request({
-      url: 'https://games.mobileapi.hupu.com/1/8.0.1/bplcommentapi/bpl/score_tree/getCurAndSubNodeByBizKey',
-      data: this.data.query,
-      header: {
-        reqId: new Date().getTime()
-      },
-      success: res => {
-        let list = res?.data?.data?.pageResult?.data || [];
-        if (list.length === 0) {
-          this.setData({
-            noMore: true
-          })
-          return;
-        }
-        let scoreList = this.data.scoreList;
-        for (let data of list) {
-          let scorePersonCount = data.node.scorePersonCount;
-          if (scorePersonCount < 10000) {
-            scorePersonCount = scorePersonCount + ' 评分'
-          } else {
-            scorePersonCount = (scorePersonCount / 10000.0).toFixed(1) + '万 评分'
-          }
-          data.node.scorePersonCount = scorePersonCount;
-          scoreList.push(data.node);
-        }
-        this.setData({
-          scoreList: scoreList,
-          noMore: list.length < this.data.query.pageSize
-        })
-      },
-      fail: error => {
-        this.setData({ loadError: true })
-        wx.showToast({
-          icon: 'error',
-          title: '加载失败，请重试',
-          duration: 1000
-        })
-        console.error('加载评分数据失败:', error)
-      },
-      complete: () => {
-        this.setData({ isLoading: false })
-      }
-    });
   },
 
   onReachBottom() {
-    if (this.data.noMore || this.data.isLoading) {
-      return;
+    if (!this.data.noMore && !this.data.isLoading) {
+      this.loadData()
     }
-    this.data.query.page++;
-    this.loadData();
   },
 
   // 重试加载
@@ -169,9 +143,64 @@ Page({
           page: 1
         },
         scoreList: [],
-        noMore: false
+        noMore: false,
+        loadError: false
       })
       this.loadData()
+    }
+  },
+
+  // 点击评分项
+  onScoreItemTap(e) {
+    const { bizId } = e.currentTarget.dataset
+    
+    if (!bizId) {
+      wx.showToast({
+        title: '加载评论失败',
+        icon: 'none'
+      })
+      return
+    }
+    
+    this.setData({
+      showComments: true,
+      currentBizId: bizId
+    })
+  },
+
+  // 关闭评论弹层
+  onCommentsClose() {
+    this.setData({ 
+      showComments: false,
+      currentBizId: ''
+    })
+  },
+
+  // 阻止冒泡
+  catchContentTap() {
+    // 阻止点击内容区域时关闭弹层
+  },
+
+  // 评论列表触底加载更多
+  onCommentScrollToLower() {
+    if (!this.data.commentNoMore && !this.data.commentLoading) {
+      this.loadComments()
+    }
+  },
+
+  // 重试加载评论
+  retryLoadComments() {
+    if (this.data.commentError) {
+      this.setData({
+        commentQuery: {
+          ...this.data.commentQuery,
+          page: 1
+        },
+        commentList: [],
+        commentNoMore: false,
+        commentError: false
+      })
+      this.loadComments()
     }
   }
 })

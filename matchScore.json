@@ -1,0 +1,2124 @@
+[
+    {
+        "groupId": 2631,
+        "parentNodeId": 13917505,
+        "nodeId": 13917531,
+        "nodePathMd5": null,
+        "sort": 0,
+        "nodeAttributes": [],
+        "node": {
+            "image": [
+                "http://i11.hoopchina.com.cn/all-backend/648B1A07A1B263A6E9A6BC9893824E87_1738863480625.png?x-oss-process=image/resize,m_lfit,w_300"
+            ],
+            "imageShape": "rectangle",
+            "minScoreUserCountLimit": 0,
+            "bizId": "157231",
+            "bizType": "basketball_item",
+            "name": "吉米-巴特勒",
+            "infoJson": {
+                "netPoints": [
+                    "0"
+                ],
+                "ast": [
+                    "7"
+                ],
+                "scoreCountThreshold": [
+                    "0"
+                ],
+                "ipLocation": "",
+                "basketball_match": [
+                    "勇士 97-102 森林狼"
+                ],
+                "showScoreTrend": [
+                    "show"
+                ],
+                "type": [
+                    "player"
+                ],
+                "reb": [
+                    "7"
+                ],
+                "selfCategory": "basketball",
+                "basketball": [
+                    "篮球赛事"
+                ],
+                "playerLink": [
+                    "huputiyu://webview/openencodeurl?url=https%3A%2F%2Fm.hupu.com%2Fbball%2FplayerInfo%2Fdata%3FplayerId%3D1901000000443162%26leagueType%3DNBA%26mfullscreen%3D1"
+                ],
+                "distributionControl": [
+                    "{\"type\":\"forever\"}"
+                ],
+                "canComment": [
+                    "true"
+                ],
+                "matchId": [
+                    "1368935336859664384"
+                ],
+                "blk": [
+                    "0"
+                ],
+                "teamLogo": [
+                    "http://i11.hoopchina.com.cn/all-backend/D48624DA509B5BBC4B447DCBDC496B71_1698746059833.png"
+                ],
+                "plusMinus": [
+                    "-1"
+                ],
+                "canScore": [
+                    "true"
+                ],
+                "minutes": [
+                    "42:59"
+                ],
+                "stl": [
+                    "0"
+                ],
+                "pts": [
+                    "33"
+                ],
+                "itemId": [
+                    "1901000000443162"
+                ],
+                "selfBizType": "basketball_item",
+                "selfBizId": 157231,
+                "teamId": [
+                    "1901000000501331"
+                ],
+                "cover_87x122": [
+                    "http://i11.hoopchina.com.cn/all-backend/648B1A07A1B263A6E9A6BC9893824E87_1738863480625.png?x-oss-process=image/resize,m_lfit,w_300"
+                ],
+                "itemBgColor": [
+                    "#003BAD"
+                ],
+                "selfName": "吉米-巴特勒",
+                "desc": [
+                    "33分 7板 7助 4失误 4犯规"
+                ]
+            },
+            "scorePersonCount": 85300,
+            "commentCount": 9613,
+            "summedCommentCount": 9613,
+            "summedScorePersonCount": 85300,
+            "totalScore": 822008,
+            "scoreAvg": 9.6,
+            "scoreDistribution": {
+                "2": 3329,
+                "4": 200,
+                "6": 245,
+                "8": 1090,
+                "10": 80436
+            },
+            "scoreSummaryTrend": null,
+            "scoreTabLocate": null,
+            "hottestComments": [
+                "可惜了，体力确实不如当年了"
+            ],
+            "hotCommentModels": [
+                {
+                    "commentUserId": 95405735,
+                    "commentUserHeadImg": "https://i1.hoopchina.com.cn/user/759/227179883357759-4744933606467892360.png",
+                    "commentUserName": "牢七",
+                    "commentContent": "可惜了，体力确实不如当年了",
+                    "commentId": "2176326287",
+                    "subjectId": "271998050",
+                    "ancillaryContents": [
+                        {
+                            "commentContentId": "328740311",
+                            "commentContent": "https://i3.hoopchina.com.cn/newsPost/1733215620192_o_w_220_h_264_c775785b.jpg",
+                            "commentContentType": "IMAGE"
+                        }
+                    ],
+                    "lightCount": 2946,
+                    "score": 10,
+                    "parentCommentUserId": null,
+                    "parentCommentUserName": "未知",
+                    "parentCommentContent": null,
+                    "parentAncillaryContents": null
+                }
+            ],
+            "tagCategoryList": null,
+            "userScore": 0,
+            "userScoreAvg": null,
+            "status": 2,
+            "items": null,
+            "parentBizKeys": [
+                {
+                    "bizType": "basketball_match",
+                    "bizId": "5722"
+                }
+            ],
+            "mostChosenTags": null,
+            "canScore": true,
+            "canComment": true,
+            "bgColor": "#000000",
+            "maskColor": "#33FFFFFF",
+            "scoreItemAttributes": {
+                "scoreCountThreshold": [
+                    "0"
+                ],
+                "canScore": [
+                    "true"
+                ],
+                "distributionControl": [
+                    "{\"type\":\"forever\"}"
+                ],
+                "showScoreTrend": [
+                    "show"
+                ],
+                "canComment": [
+                    "true"
+                ]
+            },
+            "del": 0,
+            "finalStatus": "PASS",
+            "specialStyle": null,
+            "creatorId": null,
+            "creatorName": null,
+            "creatorAvatar": null,
+            "imageSize": "cover_87x122",
+            "bgImage": null,
+            "shareBgImage": null,
+            "scoreItemNodeId": [
+                13917531
+            ],
+            "createDt": 1746924127000,
+            "permissions": [],
+            "allowUgc": null,
+            "scoreResources": {},
+            "visible": null,
+            "videoDetail": null,
+            "parentBizKey": {
+                "outBizType": "basketball_match",
+                "outBizNo": "5722",
+                "reversalKey": "5722:basketball_match",
+                "key": "basketball_match:5722"
+            },
+            "typeMapping": null,
+            "uniqueItem": false,
+            "ipLocation": "",
+            "publishTime": "15小时前",
+            "scoreColorDay": "#28A4ED",
+            "scoreColorNight": "#53D0FE",
+            "scoreValueHighlight": false,
+            "relatedModelList": [],
+            "poiBizKey": null,
+            "shareBizKey": null,
+            "distance": null,
+            "bindTagThread": false,
+            "textLink": null,
+            "itemId": null,
+            "itemType": null,
+            "showScore": true
+        },
+        "subNodes": [],
+        "subNodeCount": 0,
+        "parentNode": null,
+        "relatedInfo": null,
+        "location": null,
+        "schema": "huputiyu://webview/openencodeurl?fullscreen=1&url=https%3A%2F%2Foffline-download.hupu.com%2Fonline%2Fprod%2F310016%2Fdetail.html%3FoutBizType%3Dbasketball_item%26outBizNo%3D157231%26offlineSupport%3D0&nativeSchema=huputiyu%3A%2F%2Fscore%2Fdetail%3FoutBizType%3Dbasketball_item%26outBizNo%3D157231"
+    },
+    {
+        "groupId": 2631,
+        "parentNodeId": 13917505,
+        "nodeId": 13917510,
+        "nodePathMd5": null,
+        "sort": 0,
+        "nodeAttributes": [],
+        "node": {
+            "image": [
+                "http://i11.hoopchina.com.cn/all-backend/3F58FFDE35A9A0AD1EBAC262C6AC799D_1729670156873.png?x-oss-process=image/resize,m_lfit,w_300"
+            ],
+            "imageShape": "rectangle",
+            "minScoreUserCountLimit": 0,
+            "bizId": "157167",
+            "bizType": "basketball_item",
+            "name": "乔纳森-库明加",
+            "infoJson": {
+                "netPoints": [
+                    "0"
+                ],
+                "ast": [
+                    "3"
+                ],
+                "scoreCountThreshold": [
+                    "0"
+                ],
+                "ipLocation": "",
+                "basketball_match": [
+                    "勇士 97-102 森林狼"
+                ],
+                "showScoreTrend": [
+                    "show"
+                ],
+                "type": [
+                    "player"
+                ],
+                "reb": [
+                    "6"
+                ],
+                "selfCategory": "basketball",
+                "basketball": [
+                    "篮球赛事"
+                ],
+                "playerLink": [
+                    "huputiyu://webview/openencodeurl?url=https%3A%2F%2Fm.hupu.com%2Fbball%2FplayerInfo%2Fdata%3FplayerId%3D880449746970345472%26leagueType%3DNBA%26mfullscreen%3D1"
+                ],
+                "distributionControl": [
+                    "{\"type\":\"forever\"}"
+                ],
+                "canComment": [
+                    "true"
+                ],
+                "matchId": [
+                    "1368935336859664384"
+                ],
+                "blk": [
+                    "2"
+                ],
+                "teamLogo": [
+                    "http://i11.hoopchina.com.cn/all-backend/D48624DA509B5BBC4B447DCBDC496B71_1698746059833.png"
+                ],
+                "plusMinus": [
+                    "5"
+                ],
+                "canScore": [
+                    "true"
+                ],
+                "minutes": [
+                    "35:52"
+                ],
+                "stl": [
+                    "0"
+                ],
+                "pts": [
+                    "30"
+                ],
+                "itemId": [
+                    "880449746970345472"
+                ],
+                "selfBizType": "basketball_item",
+                "selfBizId": 157167,
+                "teamId": [
+                    "1901000000501331"
+                ],
+                "cover_87x122": [
+                    "http://i11.hoopchina.com.cn/all-backend/3F58FFDE35A9A0AD1EBAC262C6AC799D_1729670156873.png?x-oss-process=image/resize,m_lfit,w_300"
+                ],
+                "itemBgColor": [
+                    "#003BAD"
+                ],
+                "selfName": "乔纳森-库明加",
+                "desc": [
+                    "30分 6板 3助 2帽 2失误 2犯规"
+                ]
+            },
+            "scorePersonCount": 69548,
+            "commentCount": 7352,
+            "summedCommentCount": 7352,
+            "summedScorePersonCount": 69548,
+            "totalScore": 659220,
+            "scoreAvg": 9.5,
+            "scoreDistribution": {
+                "2": 3524,
+                "4": 371,
+                "6": 545,
+                "8": 1831,
+                "10": 63277
+            },
+            "scoreSummaryTrend": null,
+            "scoreTabLocate": null,
+            "hottestComments": [
+                "他就是这样的球员 已经尽他所能打得很好了 难道指望他一直无差别单打吗"
+            ],
+            "hotCommentModels": [
+                {
+                    "commentUserId": 40746020,
+                    "commentUserHeadImg": "https://i1.hoopchina.com.cn/user/892/168483979858892-4744786383139062502.png",
+                    "commentUserName": "拦路虎sss",
+                    "commentContent": "他就是这样的球员 已经尽他所能打得很好了 难道指望他一直无差别单打吗",
+                    "commentId": "2176418508",
+                    "subjectId": "271978660",
+                    "ancillaryContents": [],
+                    "lightCount": 4462,
+                    "score": 8,
+                    "parentCommentUserId": null,
+                    "parentCommentUserName": "未知",
+                    "parentCommentContent": null,
+                    "parentAncillaryContents": null
+                }
+            ],
+            "tagCategoryList": null,
+            "userScore": 0,
+            "userScoreAvg": null,
+            "status": 2,
+            "items": null,
+            "parentBizKeys": [
+                {
+                    "bizType": "basketball_match",
+                    "bizId": "5722"
+                }
+            ],
+            "mostChosenTags": null,
+            "canScore": true,
+            "canComment": true,
+            "bgColor": "#000000",
+            "maskColor": "#33FFFFFF",
+            "scoreItemAttributes": {
+                "scoreCountThreshold": [
+                    "0"
+                ],
+                "canScore": [
+                    "true"
+                ],
+                "distributionControl": [
+                    "{\"type\":\"forever\"}"
+                ],
+                "showScoreTrend": [
+                    "show"
+                ],
+                "canComment": [
+                    "true"
+                ]
+            },
+            "del": 0,
+            "finalStatus": "PASS",
+            "specialStyle": null,
+            "creatorId": null,
+            "creatorName": null,
+            "creatorAvatar": null,
+            "imageSize": "cover_87x122",
+            "bgImage": null,
+            "shareBgImage": null,
+            "scoreItemNodeId": [
+                13917510
+            ],
+            "createDt": 1746924125000,
+            "permissions": [],
+            "allowUgc": null,
+            "scoreResources": {},
+            "visible": null,
+            "videoDetail": null,
+            "parentBizKey": {
+                "outBizType": "basketball_match",
+                "outBizNo": "5722",
+                "reversalKey": "5722:basketball_match",
+                "key": "basketball_match:5722"
+            },
+            "typeMapping": null,
+            "uniqueItem": false,
+            "ipLocation": "",
+            "publishTime": "15小时前",
+            "scoreColorDay": "#28A4ED",
+            "scoreColorNight": "#53D0FE",
+            "scoreValueHighlight": false,
+            "relatedModelList": [],
+            "poiBizKey": null,
+            "shareBizKey": null,
+            "distance": null,
+            "bindTagThread": false,
+            "textLink": null,
+            "itemId": null,
+            "itemType": null,
+            "showScore": true
+        },
+        "subNodes": [],
+        "subNodeCount": 0,
+        "parentNode": null,
+        "relatedInfo": null,
+        "location": null,
+        "schema": "huputiyu://webview/openencodeurl?fullscreen=1&url=https%3A%2F%2Foffline-download.hupu.com%2Fonline%2Fprod%2F310016%2Fdetail.html%3FoutBizType%3Dbasketball_item%26outBizNo%3D157167%26offlineSupport%3D0&nativeSchema=huputiyu%3A%2F%2Fscore%2Fdetail%3FoutBizType%3Dbasketball_item%26outBizNo%3D157167"
+    },
+    {
+        "groupId": 2631,
+        "parentNodeId": 13917505,
+        "nodeId": 13917535,
+        "nodePathMd5": null,
+        "sort": 0,
+        "nodeAttributes": [],
+        "node": {
+            "image": [
+                "http://i11.hoopchina.com.cn/all-backend/AF972C0981E55E461BDB960E7BA1CB36_1728699372894.png?x-oss-process=image/resize,m_lfit,w_300"
+            ],
+            "imageShape": "rectangle",
+            "minScoreUserCountLimit": 0,
+            "bizId": "157233",
+            "bizType": "basketball_item",
+            "name": "安东尼-爱德华兹",
+            "infoJson": {
+                "netPoints": [
+                    "0"
+                ],
+                "ast": [
+                    "4"
+                ],
+                "scoreCountThreshold": [
+                    "0"
+                ],
+                "ipLocation": "",
+                "basketball_match": [
+                    "勇士 97-102 森林狼"
+                ],
+                "showScoreTrend": [
+                    "show"
+                ],
+                "type": [
+                    "player"
+                ],
+                "reb": [
+                    "4"
+                ],
+                "selfCategory": "basketball",
+                "basketball": [
+                    "篮球赛事"
+                ],
+                "playerLink": [
+                    "huputiyu://webview/openencodeurl?url=https%3A%2F%2Fm.hupu.com%2Fbball%2FplayerInfo%2Fdata%3FplayerId%3D781268092490612736%26leagueType%3DNBA%26mfullscreen%3D1"
+                ],
+                "distributionControl": [
+                    "{\"type\":\"forever\"}"
+                ],
+                "canComment": [
+                    "true"
+                ],
+                "matchId": [
+                    "1368935336859664384"
+                ],
+                "blk": [
+                    "1"
+                ],
+                "teamLogo": [
+                    "http://i11.hoopchina.com.cn/all-backend/DD0D5B42D50F2816B71D4C87059A1E7D_1657174355703.png"
+                ],
+                "plusMinus": [
+                    "-4"
+                ],
+                "canScore": [
+                    "true"
+                ],
+                "minutes": [
+                    "43:49"
+                ],
+                "stl": [
+                    "0"
+                ],
+                "pts": [
+                    "36"
+                ],
+                "itemId": [
+                    "781268092490612736"
+                ],
+                "selfBizType": "basketball_item",
+                "selfBizId": 157233,
+                "teamId": [
+                    "1901000000501315"
+                ],
+                "cover_87x122": [
+                    "http://i11.hoopchina.com.cn/all-backend/AF972C0981E55E461BDB960E7BA1CB36_1728699372894.png?x-oss-process=image/resize,m_lfit,w_300"
+                ],
+                "itemBgColor": [
+                    "#0E6697"
+                ],
+                "selfName": "安东尼-爱德华兹",
+                "desc": [
+                    "36分 4板 4助 1帽 3失误 "
+                ]
+            },
+            "scorePersonCount": 58762,
+            "commentCount": 5985,
+            "summedCommentCount": 5985,
+            "summedScorePersonCount": 58762,
+            "totalScore": 562138,
+            "scoreAvg": 9.6,
+            "scoreDistribution": {
+                "2": 2487,
+                "4": 255,
+                "6": 373,
+                "8": 1282,
+                "10": 54365
+            },
+            "scoreSummaryTrend": null,
+            "scoreTabLocate": null,
+            "hottestComments": [
+                "华子这处理球的能力还得继续进步啊 空间很大  支配球能力真的很重要 减少跳起传球 破联防破包夹的能力也是很重要的"
+            ],
+            "hotCommentModels": [
+                {
+                    "commentUserId": 70860298,
+                    "commentUserHeadImg": "https://i1.hoopchina.com.cn/user/70860298/1732615941433.jpg",
+                    "commentUserName": "最爱吃大西瓜",
+                    "commentContent": "华子这处理球的能力还得继续进步啊 空间很大  支配球能力真的很重要 减少跳起传球 破联防破包夹的能力也是很重要的",
+                    "commentId": "2176206194",
+                    "subjectId": "271998052",
+                    "ancillaryContents": [],
+                    "lightCount": 1839,
+                    "score": 10,
+                    "parentCommentUserId": null,
+                    "parentCommentUserName": "未知",
+                    "parentCommentContent": null,
+                    "parentAncillaryContents": null
+                }
+            ],
+            "tagCategoryList": null,
+            "userScore": 0,
+            "userScoreAvg": null,
+            "status": 2,
+            "items": null,
+            "parentBizKeys": [
+                {
+                    "bizType": "basketball_match",
+                    "bizId": "5722"
+                }
+            ],
+            "mostChosenTags": null,
+            "canScore": true,
+            "canComment": true,
+            "bgColor": "#000000",
+            "maskColor": "#33FFFFFF",
+            "scoreItemAttributes": {
+                "scoreCountThreshold": [
+                    "0"
+                ],
+                "canScore": [
+                    "true"
+                ],
+                "distributionControl": [
+                    "{\"type\":\"forever\"}"
+                ],
+                "showScoreTrend": [
+                    "show"
+                ],
+                "canComment": [
+                    "true"
+                ]
+            },
+            "del": 0,
+            "finalStatus": "PASS",
+            "specialStyle": null,
+            "creatorId": null,
+            "creatorName": null,
+            "creatorAvatar": null,
+            "imageSize": "cover_87x122",
+            "bgImage": null,
+            "shareBgImage": null,
+            "scoreItemNodeId": [
+                13917535
+            ],
+            "createDt": 1746924127000,
+            "permissions": [],
+            "allowUgc": null,
+            "scoreResources": {},
+            "visible": null,
+            "videoDetail": null,
+            "parentBizKey": {
+                "outBizType": "basketball_match",
+                "outBizNo": "5722",
+                "reversalKey": "5722:basketball_match",
+                "key": "basketball_match:5722"
+            },
+            "typeMapping": null,
+            "uniqueItem": false,
+            "ipLocation": "",
+            "publishTime": "15小时前",
+            "scoreColorDay": "#28A4ED",
+            "scoreColorNight": "#53D0FE",
+            "scoreValueHighlight": false,
+            "relatedModelList": [],
+            "poiBizKey": null,
+            "shareBizKey": null,
+            "distance": null,
+            "bindTagThread": false,
+            "textLink": null,
+            "itemId": null,
+            "itemType": null,
+            "showScore": true
+        },
+        "subNodes": [],
+        "subNodeCount": 0,
+        "parentNode": null,
+        "relatedInfo": null,
+        "location": null,
+        "schema": "huputiyu://webview/openencodeurl?fullscreen=1&url=https%3A%2F%2Foffline-download.hupu.com%2Fonline%2Fprod%2F310016%2Fdetail.html%3FoutBizType%3Dbasketball_item%26outBizNo%3D157233%26offlineSupport%3D0&nativeSchema=huputiyu%3A%2F%2Fscore%2Fdetail%3FoutBizType%3Dbasketball_item%26outBizNo%3D157233"
+    },
+    {
+        "groupId": 2631,
+        "parentNodeId": 13917505,
+        "nodeId": 13917520,
+        "nodePathMd5": null,
+        "sort": 0,
+        "nodeAttributes": [],
+        "node": {
+            "image": [
+                "http://i11.hoopchina.com.cn/all-backend/502E5A758E0CFB1EC219F1E98C80E98D_1729670719852.png?x-oss-process=image/resize,m_lfit,w_300"
+            ],
+            "imageShape": "rectangle",
+            "minScoreUserCountLimit": 0,
+            "bizId": "157226",
+            "bizType": "basketball_item",
+            "name": "斯蒂芬-库里",
+            "infoJson": {
+                "netPoints": [
+                    "0"
+                ],
+                "ast": [
+                    "0"
+                ],
+                "scoreCountThreshold": [
+                    "0"
+                ],
+                "ipLocation": "",
+                "basketball_match": [
+                    "勇士 97-102 森林狼"
+                ],
+                "showScoreTrend": [
+                    "show"
+                ],
+                "type": [
+                    "player"
+                ],
+                "reb": [
+                    "0"
+                ],
+                "selfCategory": "basketball",
+                "basketball": [
+                    "篮球赛事"
+                ],
+                "playerLink": [
+                    "huputiyu://webview/openencodeurl?url=https%3A%2F%2Fm.hupu.com%2Fbball%2FplayerInfo%2Fdata%3FplayerId%3D1901000000442301%26leagueType%3DNBA%26mfullscreen%3D1"
+                ],
+                "distributionControl": [
+                    "{\"type\":\"forever\"}"
+                ],
+                "canComment": [
+                    "true"
+                ],
+                "matchId": [
+                    "1368935336859664384"
+                ],
+                "blk": [
+                    "0"
+                ],
+                "teamLogo": [
+                    "http://i11.hoopchina.com.cn/all-backend/D48624DA509B5BBC4B447DCBDC496B71_1698746059833.png"
+                ],
+                "plusMinus": [
+                    "0"
+                ],
+                "canScore": [
+                    "true"
+                ],
+                "minutes": [
+                    "00:00"
+                ],
+                "stl": [
+                    "0"
+                ],
+                "pts": [
+                    "0"
+                ],
+                "itemId": [
+                    "1901000000442301"
+                ],
+                "selfBizType": "basketball_item",
+                "selfBizId": 157226,
+                "teamId": [
+                    "1901000000501331"
+                ],
+                "cover_87x122": [
+                    "http://i11.hoopchina.com.cn/all-backend/502E5A758E0CFB1EC219F1E98C80E98D_1729670719852.png?x-oss-process=image/resize,m_lfit,w_300"
+                ],
+                "itemBgColor": [
+                    "#003BAD"
+                ],
+                "selfName": "斯蒂芬-库里",
+                "desc": [
+                    "该球员未上场"
+                ]
+            },
+            "scorePersonCount": 39367,
+            "commentCount": 5532,
+            "summedCommentCount": 5532,
+            "summedScorePersonCount": 39367,
+            "totalScore": 341774,
+            "scoreAvg": 8.7,
+            "scoreDistribution": {
+                "2": 5997,
+                "4": 254,
+                "6": 287,
+                "8": 624,
+                "10": 32205
+            },
+            "scoreSummaryTrend": null,
+            "scoreTabLocate": null,
+            "hottestComments": [
+                "队危！！！"
+            ],
+            "hotCommentModels": [
+                {
+                    "commentUserId": 82259897,
+                    "commentUserHeadImg": "https://i2.hoopchina.com.cn/user/default/flathead1.png",
+                    "commentUserName": "虎扑JR0440626358",
+                    "commentContent": "队危！！！",
+                    "commentId": "2176467521",
+                    "subjectId": "272010047",
+                    "ancillaryContents": [
+                        {
+                            "commentContentId": "328840849",
+                            "commentContent": "https://i3.hoopchina.com.cn/newsPost/1742280824200_o_w_200_h_178_881282dd.jpg",
+                            "commentContentType": "IMAGE"
+                        }
+                    ],
+                    "lightCount": 1922,
+                    "score": 10,
+                    "parentCommentUserId": null,
+                    "parentCommentUserName": "未知",
+                    "parentCommentContent": null,
+                    "parentAncillaryContents": null
+                }
+            ],
+            "tagCategoryList": null,
+            "userScore": 0,
+            "userScoreAvg": null,
+            "status": 2,
+            "items": null,
+            "parentBizKeys": [
+                {
+                    "bizType": "basketball_match",
+                    "bizId": "5722"
+                }
+            ],
+            "mostChosenTags": null,
+            "canScore": true,
+            "canComment": true,
+            "bgColor": "#000000",
+            "maskColor": "#33FFFFFF",
+            "scoreItemAttributes": {
+                "scoreCountThreshold": [
+                    "0"
+                ],
+                "canScore": [
+                    "true"
+                ],
+                "distributionControl": [
+                    "{\"type\":\"forever\"}"
+                ],
+                "showScoreTrend": [
+                    "show"
+                ],
+                "canComment": [
+                    "true"
+                ]
+            },
+            "del": 0,
+            "finalStatus": "PASS",
+            "specialStyle": null,
+            "creatorId": null,
+            "creatorName": null,
+            "creatorAvatar": null,
+            "imageSize": "cover_87x122",
+            "bgImage": null,
+            "shareBgImage": null,
+            "scoreItemNodeId": [
+                13917520
+            ],
+            "createDt": 1746924126000,
+            "permissions": [],
+            "allowUgc": null,
+            "scoreResources": {},
+            "visible": null,
+            "videoDetail": null,
+            "parentBizKey": {
+                "outBizType": "basketball_match",
+                "outBizNo": "5722",
+                "reversalKey": "5722:basketball_match",
+                "key": "basketball_match:5722"
+            },
+            "typeMapping": null,
+            "uniqueItem": false,
+            "ipLocation": "",
+            "publishTime": "15小时前",
+            "scoreColorDay": "#28A4ED",
+            "scoreColorNight": "#53D0FE",
+            "scoreValueHighlight": false,
+            "relatedModelList": [],
+            "poiBizKey": null,
+            "shareBizKey": null,
+            "distance": null,
+            "bindTagThread": false,
+            "textLink": null,
+            "itemId": null,
+            "itemType": null,
+            "showScore": true
+        },
+        "subNodes": [],
+        "subNodeCount": 0,
+        "parentNode": null,
+        "relatedInfo": null,
+        "location": null,
+        "schema": "huputiyu://webview/openencodeurl?fullscreen=1&url=https%3A%2F%2Foffline-download.hupu.com%2Fonline%2Fprod%2F310016%2Fdetail.html%3FoutBizType%3Dbasketball_item%26outBizNo%3D157226%26offlineSupport%3D0&nativeSchema=huputiyu%3A%2F%2Fscore%2Fdetail%3FoutBizType%3Dbasketball_item%26outBizNo%3D157226"
+    },
+    {
+        "groupId": 2631,
+        "parentNodeId": 13917505,
+        "nodeId": 13917536,
+        "nodePathMd5": null,
+        "sort": 0,
+        "nodeAttributes": [],
+        "node": {
+            "image": [
+                "http://i11.hoopchina.com.cn/all-backend/69533DF81085355EB0BC7126B9AED4EC_1728548990380.webp?x-oss-process=image/resize,m_lfit,w_300"
+            ],
+            "imageShape": "rectangle",
+            "minScoreUserCountLimit": 0,
+            "bizId": "157180",
+            "bizType": "basketball_item",
+            "name": "巴迪-希尔德",
+            "infoJson": {
+                "netPoints": [
+                    "0"
+                ],
+                "ast": [
+                    "5"
+                ],
+                "scoreCountThreshold": [
+                    "0"
+                ],
+                "ipLocation": "",
+                "basketball_match": [
+                    "勇士 97-102 森林狼"
+                ],
+                "showScoreTrend": [
+                    "show"
+                ],
+                "type": [
+                    "player"
+                ],
+                "reb": [
+                    "4"
+                ],
+                "selfCategory": "basketball",
+                "basketball": [
+                    "篮球赛事"
+                ],
+                "playerLink": [
+                    "huputiyu://webview/openencodeurl?url=https%3A%2F%2Fm.hupu.com%2Fbball%2FplayerInfo%2Fdata%3FplayerId%3D1901000000469245%26leagueType%3DNBA%26mfullscreen%3D1"
+                ],
+                "distributionControl": [
+                    "{\"type\":\"forever\"}"
+                ],
+                "canComment": [
+                    "true"
+                ],
+                "matchId": [
+                    "1368935336859664384"
+                ],
+                "blk": [
+                    "2"
+                ],
+                "teamLogo": [
+                    "http://i11.hoopchina.com.cn/all-backend/D48624DA509B5BBC4B447DCBDC496B71_1698746059833.png"
+                ],
+                "plusMinus": [
+                    "-5"
+                ],
+                "canScore": [
+                    "true"
+                ],
+                "minutes": [
+                    "32:20"
+                ],
+                "stl": [
+                    "0"
+                ],
+                "pts": [
+                    "14"
+                ],
+                "itemId": [
+                    "1901000000469245"
+                ],
+                "selfBizType": "basketball_item",
+                "selfBizId": 157180,
+                "teamId": [
+                    "1901000000501331"
+                ],
+                "cover_87x122": [
+                    "http://i11.hoopchina.com.cn/all-backend/69533DF81085355EB0BC7126B9AED4EC_1728548990380.webp?x-oss-process=image/resize,m_lfit,w_300"
+                ],
+                "itemBgColor": [
+                    "#003BAD"
+                ],
+                "selfName": "巴迪-希尔德",
+                "desc": [
+                    "14分 4板 5助 2帽 "
+                ]
+            },
+            "scorePersonCount": 35399,
+            "commentCount": 1651,
+            "summedCommentCount": 1651,
+            "summedScorePersonCount": 35399,
+            "totalScore": 331838,
+            "scoreAvg": 9.4,
+            "scoreDistribution": {
+                "2": 1925,
+                "4": 267,
+                "6": 482,
+                "8": 1611,
+                "10": 31114
+            },
+            "scoreSummaryTrend": null,
+            "scoreTabLocate": null,
+            "hottestComments": [
+                "没有你我们到不了这里 下场加油"
+            ],
+            "hotCommentModels": [
+                {
+                    "commentUserId": 102512598,
+                    "commentUserHeadImg": "https://i2.hoopchina.com.cn/user/102512598/1723325769642.jpg",
+                    "commentUserName": "虎扑JR1708495457",
+                    "commentContent": "没有你我们到不了这里 下场加油",
+                    "commentId": "2176332542",
+                    "subjectId": "271985013",
+                    "ancillaryContents": [],
+                    "lightCount": 2651,
+                    "score": 10,
+                    "parentCommentUserId": null,
+                    "parentCommentUserName": "未知",
+                    "parentCommentContent": null,
+                    "parentAncillaryContents": null
+                }
+            ],
+            "tagCategoryList": null,
+            "userScore": 0,
+            "userScoreAvg": null,
+            "status": 2,
+            "items": null,
+            "parentBizKeys": [
+                {
+                    "bizType": "basketball_match",
+                    "bizId": "5722"
+                }
+            ],
+            "mostChosenTags": null,
+            "canScore": true,
+            "canComment": true,
+            "bgColor": "#000000",
+            "maskColor": "#33FFFFFF",
+            "scoreItemAttributes": {
+                "scoreCountThreshold": [
+                    "0"
+                ],
+                "canScore": [
+                    "true"
+                ],
+                "distributionControl": [
+                    "{\"type\":\"forever\"}"
+                ],
+                "showScoreTrend": [
+                    "show"
+                ],
+                "canComment": [
+                    "true"
+                ]
+            },
+            "del": 0,
+            "finalStatus": "PASS",
+            "specialStyle": null,
+            "creatorId": null,
+            "creatorName": null,
+            "creatorAvatar": null,
+            "imageSize": "cover_87x122",
+            "bgImage": null,
+            "shareBgImage": null,
+            "scoreItemNodeId": [
+                13917536
+            ],
+            "createDt": 1746924128000,
+            "permissions": [],
+            "allowUgc": null,
+            "scoreResources": {},
+            "visible": null,
+            "videoDetail": null,
+            "parentBizKey": {
+                "outBizType": "basketball_match",
+                "outBizNo": "5722",
+                "reversalKey": "5722:basketball_match",
+                "key": "basketball_match:5722"
+            },
+            "typeMapping": null,
+            "uniqueItem": false,
+            "ipLocation": "",
+            "publishTime": "15小时前",
+            "scoreColorDay": "#28A4ED",
+            "scoreColorNight": "#53D0FE",
+            "scoreValueHighlight": false,
+            "relatedModelList": [],
+            "poiBizKey": null,
+            "shareBizKey": null,
+            "distance": null,
+            "bindTagThread": false,
+            "textLink": null,
+            "itemId": null,
+            "itemType": null,
+            "showScore": true
+        },
+        "subNodes": [],
+        "subNodeCount": 0,
+        "parentNode": null,
+        "relatedInfo": null,
+        "location": null,
+        "schema": "huputiyu://webview/openencodeurl?fullscreen=1&url=https%3A%2F%2Foffline-download.hupu.com%2Fonline%2Fprod%2F310016%2Fdetail.html%3FoutBizType%3Dbasketball_item%26outBizNo%3D157180%26offlineSupport%3D0&nativeSchema=huputiyu%3A%2F%2Fscore%2Fdetail%3FoutBizType%3Dbasketball_item%26outBizNo%3D157180"
+    },
+    {
+        "groupId": 2631,
+        "parentNodeId": 13917505,
+        "nodeId": 13917532,
+        "nodePathMd5": null,
+        "sort": 0,
+        "nodeAttributes": [],
+        "node": {
+            "image": [
+                "http://i11.hoopchina.com.cn/all-backend/8685030CEB259B65E45FD848D3E1B9D2_1728699309395.png?x-oss-process=image/resize,m_lfit,w_300"
+            ],
+            "imageShape": "rectangle",
+            "minScoreUserCountLimit": 0,
+            "bizId": "157232",
+            "bizType": "basketball_item",
+            "name": "朱利叶斯-兰德尔",
+            "infoJson": {
+                "netPoints": [
+                    "0"
+                ],
+                "ast": [
+                    "12"
+                ],
+                "scoreCountThreshold": [
+                    "0"
+                ],
+                "ipLocation": "",
+                "basketball_match": [
+                    "勇士 97-102 森林狼"
+                ],
+                "showScoreTrend": [
+                    "show"
+                ],
+                "type": [
+                    "player"
+                ],
+                "reb": [
+                    "10"
+                ],
+                "selfCategory": "basketball",
+                "basketball": [
+                    "篮球赛事"
+                ],
+                "playerLink": [
+                    "huputiyu://webview/openencodeurl?url=https%3A%2F%2Fm.hupu.com%2Fbball%2FplayerInfo%2Fdata%3FplayerId%3D1901000000448352%26leagueType%3DNBA%26mfullscreen%3D1"
+                ],
+                "distributionControl": [
+                    "{\"type\":\"forever\"}"
+                ],
+                "canComment": [
+                    "true"
+                ],
+                "matchId": [
+                    "1368935336859664384"
+                ],
+                "blk": [
+                    "0"
+                ],
+                "teamLogo": [
+                    "http://i11.hoopchina.com.cn/all-backend/DD0D5B42D50F2816B71D4C87059A1E7D_1657174355703.png"
+                ],
+                "plusMinus": [
+                    "14"
+                ],
+                "canScore": [
+                    "true"
+                ],
+                "minutes": [
+                    "40:25"
+                ],
+                "stl": [
+                    "3"
+                ],
+                "pts": [
+                    "24"
+                ],
+                "itemId": [
+                    "1901000000448352"
+                ],
+                "selfBizType": "basketball_item",
+                "selfBizId": 157232,
+                "teamId": [
+                    "1901000000501315"
+                ],
+                "cover_87x122": [
+                    "http://i11.hoopchina.com.cn/all-backend/8685030CEB259B65E45FD848D3E1B9D2_1728699309395.png?x-oss-process=image/resize,m_lfit,w_300"
+                ],
+                "itemBgColor": [
+                    "#0E6697"
+                ],
+                "selfName": "朱利叶斯-兰德尔",
+                "desc": [
+                    "24分 10板 12助 3断 4失误 3犯规"
+                ]
+            },
+            "scorePersonCount": 34704,
+            "commentCount": 2205,
+            "summedCommentCount": 2205,
+            "summedScorePersonCount": 34704,
+            "totalScore": 331154,
+            "scoreAvg": 9.5,
+            "scoreDistribution": {
+                "2": 1435,
+                "4": 206,
+                "6": 308,
+                "8": 969,
+                "10": 31786
+            },
+            "scoreSummaryTrend": null,
+            "scoreTabLocate": null,
+            "hottestComments": [
+                "最后时刻兰豆一次助攻戈贝尔2+1，一次拼下最关键的前场篮板助攻爱德华兹空位三分，一次防成勇士关键进攻，全场拿下三双，末节4分5板5助，即使爱德华兹全场拿下36分，我依然认为兰德尔这场就是森林狼的MVP，如果爱德华兹是当代乔丹，那么他就是毋庸置疑的当代皮蓬"
+            ],
+            "hotCommentModels": [
+                {
+                    "commentUserId": 100321183,
+                    "commentUserHeadImg": "https://i1.hoopchina.com.cn/user/235/277523208782235-4745092988290304970.png",
+                    "commentUserName": "Thzestar",
+                    "commentContent": "最后时刻兰豆一次助攻戈贝尔2+1，一次拼下最关键的前场篮板助攻爱德华兹空位三分，一次防成勇士关键进攻，全场拿下三双，末节4分5板5助，即使爱德华兹全场拿下36分，我依然认为兰德尔这场就是森林狼的MVP，如果爱德华兹是当代乔丹，那么他就是毋庸置疑的当代皮蓬",
+                    "commentId": "2176190495",
+                    "subjectId": "271998051",
+                    "ancillaryContents": [],
+                    "lightCount": 2863,
+                    "score": 10,
+                    "parentCommentUserId": null,
+                    "parentCommentUserName": "未知",
+                    "parentCommentContent": null,
+                    "parentAncillaryContents": null
+                }
+            ],
+            "tagCategoryList": null,
+            "userScore": 0,
+            "userScoreAvg": null,
+            "status": 2,
+            "items": null,
+            "parentBizKeys": [
+                {
+                    "bizType": "basketball_match",
+                    "bizId": "5722"
+                }
+            ],
+            "mostChosenTags": null,
+            "canScore": true,
+            "canComment": true,
+            "bgColor": "#000000",
+            "maskColor": "#33FFFFFF",
+            "scoreItemAttributes": {
+                "scoreCountThreshold": [
+                    "0"
+                ],
+                "canScore": [
+                    "true"
+                ],
+                "distributionControl": [
+                    "{\"type\":\"forever\"}"
+                ],
+                "showScoreTrend": [
+                    "show"
+                ],
+                "canComment": [
+                    "true"
+                ]
+            },
+            "del": 0,
+            "finalStatus": "PASS",
+            "specialStyle": null,
+            "creatorId": null,
+            "creatorName": null,
+            "creatorAvatar": null,
+            "imageSize": "cover_87x122",
+            "bgImage": null,
+            "shareBgImage": null,
+            "scoreItemNodeId": [
+                13917532
+            ],
+            "createDt": 1746924127000,
+            "permissions": [],
+            "allowUgc": null,
+            "scoreResources": {},
+            "visible": null,
+            "videoDetail": null,
+            "parentBizKey": {
+                "outBizType": "basketball_match",
+                "outBizNo": "5722",
+                "reversalKey": "5722:basketball_match",
+                "key": "basketball_match:5722"
+            },
+            "typeMapping": null,
+            "uniqueItem": false,
+            "ipLocation": "",
+            "publishTime": "15小时前",
+            "scoreColorDay": "#28A4ED",
+            "scoreColorNight": "#53D0FE",
+            "scoreValueHighlight": false,
+            "relatedModelList": [],
+            "poiBizKey": null,
+            "shareBizKey": null,
+            "distance": null,
+            "bindTagThread": false,
+            "textLink": null,
+            "itemId": null,
+            "itemType": null,
+            "showScore": true
+        },
+        "subNodes": [],
+        "subNodeCount": 0,
+        "parentNode": null,
+        "relatedInfo": null,
+        "location": null,
+        "schema": "huputiyu://webview/openencodeurl?fullscreen=1&url=https%3A%2F%2Foffline-download.hupu.com%2Fonline%2Fprod%2F310016%2Fdetail.html%3FoutBizType%3Dbasketball_item%26outBizNo%3D157232%26offlineSupport%3D0&nativeSchema=huputiyu%3A%2F%2Fscore%2Fdetail%3FoutBizType%3Dbasketball_item%26outBizNo%3D157232"
+    },
+    {
+        "groupId": 2631,
+        "parentNodeId": 13917505,
+        "nodeId": 13917533,
+        "nodePathMd5": null,
+        "sort": 0,
+        "nodeAttributes": [],
+        "node": {
+            "image": [
+                "http://i11.hoopchina.com.cn/all-backend/D02AC39C978935C93F4C1C684768EEF8_1729670664901.png?x-oss-process=image/resize,m_lfit,w_300"
+            ],
+            "imageShape": "rectangle",
+            "minScoreUserCountLimit": 0,
+            "bizId": "157178",
+            "bizType": "basketball_item",
+            "name": "德雷蒙德-格林",
+            "infoJson": {
+                "netPoints": [
+                    "0"
+                ],
+                "ast": [
+                    "4"
+                ],
+                "scoreCountThreshold": [
+                    "0"
+                ],
+                "ipLocation": "",
+                "basketball_match": [
+                    "勇士 97-102 森林狼"
+                ],
+                "showScoreTrend": [
+                    "show"
+                ],
+                "type": [
+                    "player"
+                ],
+                "reb": [
+                    "2"
+                ],
+                "selfCategory": "basketball",
+                "basketball": [
+                    "篮球赛事"
+                ],
+                "playerLink": [
+                    "huputiyu://webview/openencodeurl?url=https%3A%2F%2Fm.hupu.com%2Fbball%2FplayerInfo%2Fdata%3FplayerId%3D1901000000443505%26leagueType%3DNBA%26mfullscreen%3D1"
+                ],
+                "distributionControl": [
+                    "{\"type\":\"forever\"}"
+                ],
+                "canComment": [
+                    "true"
+                ],
+                "matchId": [
+                    "1368935336859664384"
+                ],
+                "blk": [
+                    "0"
+                ],
+                "teamLogo": [
+                    "http://i11.hoopchina.com.cn/all-backend/D48624DA509B5BBC4B447DCBDC496B71_1698746059833.png"
+                ],
+                "plusMinus": [
+                    "-5"
+                ],
+                "canScore": [
+                    "true"
+                ],
+                "minutes": [
+                    "29:09"
+                ],
+                "stl": [
+                    "2"
+                ],
+                "pts": [
+                    "2"
+                ],
+                "itemId": [
+                    "1901000000443505"
+                ],
+                "selfBizType": "basketball_item",
+                "selfBizId": 157178,
+                "teamId": [
+                    "1901000000501331"
+                ],
+                "cover_87x122": [
+                    "http://i11.hoopchina.com.cn/all-backend/D02AC39C978935C93F4C1C684768EEF8_1729670664901.png?x-oss-process=image/resize,m_lfit,w_300"
+                ],
+                "itemBgColor": [
+                    "#003BAD"
+                ],
+                "selfName": "德雷蒙德-格林",
+                "desc": [
+                    "2分 2板 4助 2断 5失误 6犯规"
+                ]
+            },
+            "scorePersonCount": 34578,
+            "commentCount": 5571,
+            "summedCommentCount": 5571,
+            "summedScorePersonCount": 34578,
+            "totalScore": 113946,
+            "scoreAvg": 3.3,
+            "scoreDistribution": {
+                "2": 26291,
+                "4": 2470,
+                "6": 1372,
+                "8": 599,
+                "10": 3846
+            },
+            "scoreSummaryTrend": null,
+            "scoreTabLocate": null,
+            "hottestComments": [
+                "你总是在关键的时刻上头 冒攻 失误  被打反击"
+            ],
+            "hotCommentModels": [
+                {
+                    "commentUserId": 68449020,
+                    "commentUserHeadImg": "https://i3.hoopchina.com.cn/user/739/138346713508739/138346713508739-1612001692.jpg",
+                    "commentUserName": "小啦格局小拉",
+                    "commentContent": "你总是在关键的时刻上头 冒攻 失误  被打反击",
+                    "commentId": "2176347652",
+                    "subjectId": "271982256",
+                    "ancillaryContents": [],
+                    "lightCount": 1536,
+                    "score": 0,
+                    "parentCommentUserId": null,
+                    "parentCommentUserName": "未知",
+                    "parentCommentContent": null,
+                    "parentAncillaryContents": null
+                }
+            ],
+            "tagCategoryList": null,
+            "userScore": 0,
+            "userScoreAvg": null,
+            "status": 2,
+            "items": null,
+            "parentBizKeys": [
+                {
+                    "bizType": "basketball_match",
+                    "bizId": "5722"
+                }
+            ],
+            "mostChosenTags": null,
+            "canScore": true,
+            "canComment": true,
+            "bgColor": "#000000",
+            "maskColor": "#33FFFFFF",
+            "scoreItemAttributes": {
+                "scoreCountThreshold": [
+                    "0"
+                ],
+                "canScore": [
+                    "true"
+                ],
+                "distributionControl": [
+                    "{\"type\":\"forever\"}"
+                ],
+                "showScoreTrend": [
+                    "show"
+                ],
+                "canComment": [
+                    "true"
+                ]
+            },
+            "del": 0,
+            "finalStatus": "PASS",
+            "specialStyle": null,
+            "creatorId": null,
+            "creatorName": null,
+            "creatorAvatar": null,
+            "imageSize": "cover_87x122",
+            "bgImage": null,
+            "shareBgImage": null,
+            "scoreItemNodeId": [
+                13917533
+            ],
+            "createDt": 1746924127000,
+            "permissions": [],
+            "allowUgc": null,
+            "scoreResources": {},
+            "visible": null,
+            "videoDetail": null,
+            "parentBizKey": {
+                "outBizType": "basketball_match",
+                "outBizNo": "5722",
+                "reversalKey": "5722:basketball_match",
+                "key": "basketball_match:5722"
+            },
+            "typeMapping": null,
+            "uniqueItem": false,
+            "ipLocation": "",
+            "publishTime": "15小时前",
+            "scoreColorDay": "#28A4ED",
+            "scoreColorNight": "#53D0FE",
+            "scoreValueHighlight": false,
+            "relatedModelList": [],
+            "poiBizKey": null,
+            "shareBizKey": null,
+            "distance": null,
+            "bindTagThread": false,
+            "textLink": null,
+            "itemId": null,
+            "itemType": null,
+            "showScore": true
+        },
+        "subNodes": [],
+        "subNodeCount": 0,
+        "parentNode": null,
+        "relatedInfo": null,
+        "location": null,
+        "schema": "huputiyu://webview/openencodeurl?fullscreen=1&url=https%3A%2F%2Foffline-download.hupu.com%2Fonline%2Fprod%2F310016%2Fdetail.html%3FoutBizType%3Dbasketball_item%26outBizNo%3D157178%26offlineSupport%3D0&nativeSchema=huputiyu%3A%2F%2Fscore%2Fdetail%3FoutBizType%3Dbasketball_item%26outBizNo%3D157178"
+    },
+    {
+        "groupId": 2631,
+        "parentNodeId": 13917505,
+        "nodeId": 13917529,
+        "nodePathMd5": null,
+        "sort": 0,
+        "nodeAttributes": [],
+        "node": {
+            "image": [
+                "http://i11.hoopchina.com.cn/all-backend/6CD016BD9672ABC5F6B14A71FD2819BA_1729670274103.png?x-oss-process=image/resize,m_lfit,w_300"
+            ],
+            "imageShape": "rectangle",
+            "minScoreUserCountLimit": 0,
+            "bizId": "157230",
+            "bizType": "basketball_item",
+            "name": "布兰丁-波杰姆斯基",
+            "infoJson": {
+                "netPoints": [
+                    "0"
+                ],
+                "ast": [
+                    "2"
+                ],
+                "scoreCountThreshold": [
+                    "0"
+                ],
+                "ipLocation": "",
+                "basketball_match": [
+                    "勇士 97-102 森林狼"
+                ],
+                "showScoreTrend": [
+                    "show"
+                ],
+                "type": [
+                    "player"
+                ],
+                "reb": [
+                    "8"
+                ],
+                "selfCategory": "basketball",
+                "basketball": [
+                    "篮球赛事"
+                ],
+                "playerLink": [
+                    "huputiyu://webview/openencodeurl?url=https%3A%2F%2Fm.hupu.com%2Fbball%2FplayerInfo%2Fdata%3FplayerId%3D1121479388039217152%26leagueType%3DNBA%26mfullscreen%3D1"
+                ],
+                "distributionControl": [
+                    "{\"type\":\"forever\"}"
+                ],
+                "canComment": [
+                    "true"
+                ],
+                "matchId": [
+                    "1368935336859664384"
+                ],
+                "blk": [
+                    "0"
+                ],
+                "teamLogo": [
+                    "http://i11.hoopchina.com.cn/all-backend/D48624DA509B5BBC4B447DCBDC496B71_1698746059833.png"
+                ],
+                "plusMinus": [
+                    "-2"
+                ],
+                "canScore": [
+                    "true"
+                ],
+                "minutes": [
+                    "39:08"
+                ],
+                "stl": [
+                    "1"
+                ],
+                "pts": [
+                    "5"
+                ],
+                "itemId": [
+                    "1121479388039217152"
+                ],
+                "selfBizType": "basketball_item",
+                "selfBizId": 157230,
+                "teamId": [
+                    "1901000000501331"
+                ],
+                "cover_87x122": [
+                    "http://i11.hoopchina.com.cn/all-backend/6CD016BD9672ABC5F6B14A71FD2819BA_1729670274103.png?x-oss-process=image/resize,m_lfit,w_300"
+                ],
+                "itemBgColor": [
+                    "#003BAD"
+                ],
+                "selfName": "布兰丁-波杰姆斯基",
+                "desc": [
+                    "5分 8板 2助 1断 1失误 1犯规"
+                ]
+            },
+            "scorePersonCount": 23744,
+            "commentCount": 3833,
+            "summedCommentCount": 3833,
+            "summedScorePersonCount": 23744,
+            "totalScore": 94194,
+            "scoreAvg": 4.0,
+            "scoreDistribution": {
+                "2": 14624,
+                "4": 2766,
+                "6": 2023,
+                "8": 783,
+                "10": 3548
+            },
+            "scoreSummaryTrend": null,
+            "scoreTabLocate": null,
+            "hottestComments": [
+                "但凡把你换成一个正常的后卫，TM勇士今天都能赢，库明加跟吉米那么c，你要持球打，那给你空位都不中你还能干嘛"
+            ],
+            "hotCommentModels": [
+                {
+                    "commentUserId": 110384849,
+                    "commentUserHeadImg": "https://i2.hoopchina.com.cn/user/default/light1.png",
+                    "commentUserName": "虎扑JR0454144003",
+                    "commentContent": "但凡把你换成一个正常的后卫，TM勇士今天都能赢，库明加跟吉米那么c，你要持球打，那给你空位都不中你还能干嘛",
+                    "commentId": "2176442169",
+                    "subjectId": "271998049",
+                    "ancillaryContents": [],
+                    "lightCount": 1290,
+                    "score": 2,
+                    "parentCommentUserId": null,
+                    "parentCommentUserName": "未知",
+                    "parentCommentContent": null,
+                    "parentAncillaryContents": null
+                }
+            ],
+            "tagCategoryList": null,
+            "userScore": 0,
+            "userScoreAvg": null,
+            "status": 2,
+            "items": null,
+            "parentBizKeys": [
+                {
+                    "bizType": "basketball_match",
+                    "bizId": "5722"
+                }
+            ],
+            "mostChosenTags": null,
+            "canScore": true,
+            "canComment": true,
+            "bgColor": "#000000",
+            "maskColor": "#33FFFFFF",
+            "scoreItemAttributes": {
+                "scoreCountThreshold": [
+                    "0"
+                ],
+                "canScore": [
+                    "true"
+                ],
+                "distributionControl": [
+                    "{\"type\":\"forever\"}"
+                ],
+                "showScoreTrend": [
+                    "show"
+                ],
+                "canComment": [
+                    "true"
+                ]
+            },
+            "del": 0,
+            "finalStatus": "PASS",
+            "specialStyle": null,
+            "creatorId": null,
+            "creatorName": null,
+            "creatorAvatar": null,
+            "imageSize": "cover_87x122",
+            "bgImage": null,
+            "shareBgImage": null,
+            "scoreItemNodeId": [
+                13917529
+            ],
+            "createDt": 1746924127000,
+            "permissions": [],
+            "allowUgc": null,
+            "scoreResources": {},
+            "visible": null,
+            "videoDetail": null,
+            "parentBizKey": {
+                "outBizType": "basketball_match",
+                "outBizNo": "5722",
+                "reversalKey": "5722:basketball_match",
+                "key": "basketball_match:5722"
+            },
+            "typeMapping": null,
+            "uniqueItem": false,
+            "ipLocation": "",
+            "publishTime": "15小时前",
+            "scoreColorDay": "#28A4ED",
+            "scoreColorNight": "#53D0FE",
+            "scoreValueHighlight": false,
+            "relatedModelList": [],
+            "poiBizKey": null,
+            "shareBizKey": null,
+            "distance": null,
+            "bindTagThread": false,
+            "textLink": null,
+            "itemId": null,
+            "itemType": null,
+            "showScore": true
+        },
+        "subNodes": [],
+        "subNodeCount": 0,
+        "parentNode": null,
+        "relatedInfo": null,
+        "location": null,
+        "schema": "huputiyu://webview/openencodeurl?fullscreen=1&url=https%3A%2F%2Foffline-download.hupu.com%2Fonline%2Fprod%2F310016%2Fdetail.html%3FoutBizType%3Dbasketball_item%26outBizNo%3D157230%26offlineSupport%3D0&nativeSchema=huputiyu%3A%2F%2Fscore%2Fdetail%3FoutBizType%3Dbasketball_item%26outBizNo%3D157230"
+    },
+    {
+        "groupId": 2631,
+        "parentNodeId": 13917505,
+        "nodeId": 13917539,
+        "nodePathMd5": null,
+        "sort": 0,
+        "nodeAttributes": [],
+        "node": {
+            "image": [
+                "http://i11.hoopchina.com.cn/all-backend/09A2C7B382787711C24C3CF894E6D7C0_1729670948777.png?x-oss-process=image/resize,m_lfit,w_300"
+            ],
+            "imageShape": "rectangle",
+            "minScoreUserCountLimit": 0,
+            "bizId": "157235",
+            "bizType": "basketball_item",
+            "name": "特雷斯·杰克逊-戴维斯",
+            "infoJson": {
+                "netPoints": [
+                    "0"
+                ],
+                "ast": [
+                    "0"
+                ],
+                "scoreCountThreshold": [
+                    "0"
+                ],
+                "ipLocation": "",
+                "basketball_match": [
+                    "勇士 97-102 森林狼"
+                ],
+                "showScoreTrend": [
+                    "show"
+                ],
+                "type": [
+                    "player"
+                ],
+                "reb": [
+                    "2"
+                ],
+                "selfCategory": "basketball",
+                "basketball": [
+                    "篮球赛事"
+                ],
+                "playerLink": [
+                    "huputiyu://webview/openencodeurl?url=https%3A%2F%2Fm.hupu.com%2Fbball%2FplayerInfo%2Fdata%3FplayerId%3D1125706745130254336%26leagueType%3DNBA%26mfullscreen%3D1"
+                ],
+                "distributionControl": [
+                    "{\"type\":\"forever\"}"
+                ],
+                "canComment": [
+                    "true"
+                ],
+                "matchId": [
+                    "1368935336859664384"
+                ],
+                "blk": [
+                    "1"
+                ],
+                "teamLogo": [
+                    "http://i11.hoopchina.com.cn/all-backend/D48624DA509B5BBC4B447DCBDC496B71_1698746059833.png"
+                ],
+                "plusMinus": [
+                    "-1"
+                ],
+                "canScore": [
+                    "true"
+                ],
+                "minutes": [
+                    "11:05"
+                ],
+                "stl": [
+                    "0"
+                ],
+                "pts": [
+                    "7"
+                ],
+                "itemId": [
+                    "1125706745130254336"
+                ],
+                "selfBizType": "basketball_item",
+                "selfBizId": 157235,
+                "teamId": [
+                    "1901000000501331"
+                ],
+                "cover_87x122": [
+                    "http://i11.hoopchina.com.cn/all-backend/09A2C7B382787711C24C3CF894E6D7C0_1729670948777.png?x-oss-process=image/resize,m_lfit,w_300"
+                ],
+                "itemBgColor": [
+                    "#003BAD"
+                ],
+                "selfName": "特雷斯·杰克逊-戴维斯",
+                "desc": [
+                    "7分 2板 0助 1帽 2犯规"
+                ]
+            },
+            "scorePersonCount": 14366,
+            "commentCount": 727,
+            "summedCommentCount": 727,
+            "summedScorePersonCount": 14366,
+            "totalScore": 119740,
+            "scoreAvg": 8.3,
+            "scoreDistribution": {
+                "2": 2073,
+                "4": 320,
+                "6": 678,
+                "8": 1352,
+                "10": 9943
+            },
+            "scoreSummaryTrend": null,
+            "scoreTabLocate": null,
+            "hottestComments": [
+                "我觉得土鸡蛋上真有用"
+            ],
+            "hotCommentModels": [
+                {
+                    "commentUserId": 113303453,
+                    "commentUserHeadImg": "https://i2.hoopchina.com.cn/user/default/flathead2.png",
+                    "commentUserName": "虎扑JR1339532046",
+                    "commentContent": "我觉得土鸡蛋上真有用",
+                    "commentId": "2176295293",
+                    "subjectId": "272002050",
+                    "ancillaryContents": [],
+                    "lightCount": 490,
+                    "score": 10,
+                    "parentCommentUserId": null,
+                    "parentCommentUserName": "未知",
+                    "parentCommentContent": null,
+                    "parentAncillaryContents": null
+                }
+            ],
+            "tagCategoryList": null,
+            "userScore": 0,
+            "userScoreAvg": null,
+            "status": 2,
+            "items": null,
+            "parentBizKeys": [
+                {
+                    "bizType": "basketball_match",
+                    "bizId": "5722"
+                }
+            ],
+            "mostChosenTags": null,
+            "canScore": true,
+            "canComment": true,
+            "bgColor": "#000000",
+            "maskColor": "#33FFFFFF",
+            "scoreItemAttributes": {
+                "scoreCountThreshold": [
+                    "0"
+                ],
+                "canScore": [
+                    "true"
+                ],
+                "distributionControl": [
+                    "{\"type\":\"forever\"}"
+                ],
+                "showScoreTrend": [
+                    "show"
+                ],
+                "canComment": [
+                    "true"
+                ]
+            },
+            "del": 0,
+            "finalStatus": "PASS",
+            "specialStyle": null,
+            "creatorId": null,
+            "creatorName": null,
+            "creatorAvatar": null,
+            "imageSize": "cover_87x122",
+            "bgImage": null,
+            "shareBgImage": null,
+            "scoreItemNodeId": [
+                13917539
+            ],
+            "createDt": 1746924128000,
+            "permissions": [],
+            "allowUgc": null,
+            "scoreResources": {},
+            "visible": null,
+            "videoDetail": null,
+            "parentBizKey": {
+                "outBizType": "basketball_match",
+                "outBizNo": "5722",
+                "reversalKey": "5722:basketball_match",
+                "key": "basketball_match:5722"
+            },
+            "typeMapping": null,
+            "uniqueItem": false,
+            "ipLocation": "",
+            "publishTime": "15小时前",
+            "scoreColorDay": "#28A4ED",
+            "scoreColorNight": "#53D0FE",
+            "scoreValueHighlight": false,
+            "relatedModelList": [],
+            "poiBizKey": null,
+            "shareBizKey": null,
+            "distance": null,
+            "bindTagThread": false,
+            "textLink": null,
+            "itemId": null,
+            "itemType": null,
+            "showScore": true
+        },
+        "subNodes": [],
+        "subNodeCount": 0,
+        "parentNode": null,
+        "relatedInfo": null,
+        "location": null,
+        "schema": "huputiyu://webview/openencodeurl?fullscreen=1&url=https%3A%2F%2Foffline-download.hupu.com%2Fonline%2Fprod%2F310016%2Fdetail.html%3FoutBizType%3Dbasketball_item%26outBizNo%3D157235%26offlineSupport%3D0&nativeSchema=huputiyu%3A%2F%2Fscore%2Fdetail%3FoutBizType%3Dbasketball_item%26outBizNo%3D157235"
+    },
+    {
+        "groupId": 2631,
+        "parentNodeId": 13917505,
+        "nodeId": 13917537,
+        "nodePathMd5": null,
+        "sort": 0,
+        "nodeAttributes": [],
+        "node": {
+            "image": [
+                "http://i11.hoopchina.com.cn/all-backend/7BCC7ACEB76C7D9E3E4CFF24A4115A02_1728699483733.png?x-oss-process=image/resize,m_lfit,w_300"
+            ],
+            "imageShape": "rectangle",
+            "minScoreUserCountLimit": 0,
+            "bizId": "157234",
+            "bizType": "basketball_item",
+            "name": "鲁迪-戈贝尔",
+            "infoJson": {
+                "netPoints": [
+                    "0"
+                ],
+                "ast": [
+                    "0"
+                ],
+                "scoreCountThreshold": [
+                    "0"
+                ],
+                "ipLocation": "",
+                "basketball_match": [
+                    "勇士 97-102 森林狼"
+                ],
+                "showScoreTrend": [
+                    "show"
+                ],
+                "type": [
+                    "player"
+                ],
+                "reb": [
+                    "13"
+                ],
+                "selfCategory": "basketball",
+                "basketball": [
+                    "篮球赛事"
+                ],
+                "playerLink": [
+                    "huputiyu://webview/openencodeurl?url=https%3A%2F%2Fm.hupu.com%2Fbball%2FplayerInfo%2Fdata%3FplayerId%3D1901000000447892%26leagueType%3DNBA%26mfullscreen%3D1"
+                ],
+                "distributionControl": [
+                    "{\"type\":\"forever\"}"
+                ],
+                "canComment": [
+                    "true"
+                ],
+                "matchId": [
+                    "1368935336859664384"
+                ],
+                "blk": [
+                    "4"
+                ],
+                "teamLogo": [
+                    "http://i11.hoopchina.com.cn/all-backend/DD0D5B42D50F2816B71D4C87059A1E7D_1657174355703.png"
+                ],
+                "plusMinus": [
+                    "-5"
+                ],
+                "canScore": [
+                    "true"
+                ],
+                "minutes": [
+                    "26:46"
+                ],
+                "stl": [
+                    "0"
+                ],
+                "pts": [
+                    "9"
+                ],
+                "itemId": [
+                    "1901000000447892"
+                ],
+                "selfBizType": "basketball_item",
+                "selfBizId": 157234,
+                "teamId": [
+                    "1901000000501315"
+                ],
+                "cover_87x122": [
+                    "http://i11.hoopchina.com.cn/all-backend/7BCC7ACEB76C7D9E3E4CFF24A4115A02_1728699483733.png?x-oss-process=image/resize,m_lfit,w_300"
+                ],
+                "itemBgColor": [
+                    "#0E6697"
+                ],
+                "selfName": "鲁迪-戈贝尔",
+                "desc": [
+                    "9分 13板 0助 4帽 1失误 5犯规"
+                ]
+            },
+            "scorePersonCount": 14035,
+            "commentCount": 1132,
+            "summedCommentCount": 1132,
+            "summedScorePersonCount": 14035,
+            "totalScore": 105182,
+            "scoreAvg": 7.5,
+            "scoreDistribution": {
+                "2": 2809,
+                "4": 577,
+                "6": 1407,
+                "8": 1803,
+                "10": 7439
+            },
+            "scoreSummaryTrend": null,
+            "scoreTabLocate": null,
+            "hottestComments": [
+                "数据体现不出大个对队伍的帮助"
+            ],
+            "hotCommentModels": [
+                {
+                    "commentUserId": 55109345,
+                    "commentUserHeadImg": "https://i1.hoopchina.com.cn/user/55109345/1746854150421.jpg",
+                    "commentUserName": "IsaacColn",
+                    "commentContent": "数据体现不出大个对队伍的帮助",
+                    "commentId": "2176191065",
+                    "subjectId": "272002049",
+                    "ancillaryContents": [],
+                    "lightCount": 511,
+                    "score": 10,
+                    "parentCommentUserId": null,
+                    "parentCommentUserName": "未知",
+                    "parentCommentContent": null,
+                    "parentAncillaryContents": null
+                }
+            ],
+            "tagCategoryList": null,
+            "userScore": 0,
+            "userScoreAvg": null,
+            "status": 2,
+            "items": null,
+            "parentBizKeys": [
+                {
+                    "bizType": "basketball_match",
+                    "bizId": "5722"
+                }
+            ],
+            "mostChosenTags": null,
+            "canScore": true,
+            "canComment": true,
+            "bgColor": "#000000",
+            "maskColor": "#33FFFFFF",
+            "scoreItemAttributes": {
+                "scoreCountThreshold": [
+                    "0"
+                ],
+                "canScore": [
+                    "true"
+                ],
+                "distributionControl": [
+                    "{\"type\":\"forever\"}"
+                ],
+                "showScoreTrend": [
+                    "show"
+                ],
+                "canComment": [
+                    "true"
+                ]
+            },
+            "del": 0,
+            "finalStatus": "PASS",
+            "specialStyle": null,
+            "creatorId": null,
+            "creatorName": null,
+            "creatorAvatar": null,
+            "imageSize": "cover_87x122",
+            "bgImage": null,
+            "shareBgImage": null,
+            "scoreItemNodeId": [
+                13917537
+            ],
+            "createDt": 1746924128000,
+            "permissions": [],
+            "allowUgc": null,
+            "scoreResources": {},
+            "visible": null,
+            "videoDetail": null,
+            "parentBizKey": {
+                "outBizType": "basketball_match",
+                "outBizNo": "5722",
+                "reversalKey": "5722:basketball_match",
+                "key": "basketball_match:5722"
+            },
+            "typeMapping": null,
+            "uniqueItem": false,
+            "ipLocation": "",
+            "publishTime": "15小时前",
+            "scoreColorDay": "#28A4ED",
+            "scoreColorNight": "#53D0FE",
+            "scoreValueHighlight": false,
+            "relatedModelList": [],
+            "poiBizKey": null,
+            "shareBizKey": null,
+            "distance": null,
+            "bindTagThread": false,
+            "textLink": null,
+            "itemId": null,
+            "itemType": null,
+            "showScore": true
+        },
+        "subNodes": [],
+        "subNodeCount": 0,
+        "parentNode": null,
+        "relatedInfo": null,
+        "location": null,
+        "schema": "huputiyu://webview/openencodeurl?fullscreen=1&url=https%3A%2F%2Foffline-download.hupu.com%2Fonline%2Fprod%2F310016%2Fdetail.html%3FoutBizType%3Dbasketball_item%26outBizNo%3D157234%26offlineSupport%3D0&nativeSchema=huputiyu%3A%2F%2Fscore%2Fdetail%3FoutBizType%3Dbasketball_item%26outBizNo%3D157234"
+    }
+]
